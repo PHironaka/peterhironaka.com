@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import Content, { HTMLContent } from '../components/Content'
+
 
 class TagRoute extends React.Component {
   render() {
@@ -10,7 +12,11 @@ class TagRoute extends React.Component {
         <Link to={post.node.fields.slug}>
           <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
         </Link>
+          <p>{post.node.frontmatter.content} </p>
+
       </li>
+
+
     ))
     const tag = this.props.pathContext.tag
     const title = this.props.data.site.siteMetadata.title
