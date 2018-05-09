@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700');
+
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+
+  font-weight:400;
+color: #000;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+
+.container {
+    margin: 0 auto;
+width: 90%;
+display: grid;
+grid-column-gap: 2rem;
+margin: 0 auto;
+grid-column-gap: 2rem;
+grid-template-columns: 1fr;
+}
+
+.navbar .container {
+grid-template-columns: 2fr 1fr;
+
+.navbar-brand .navbar-item figure{
+  margin:1em 0;
+}
+  .navbar-start {
+  justify-self:end;
+  margin:1em 0;
+  a {
+  margin:10px;
+  }
+  }
+}
+
+img {
+  max-width:100%;
+}
+
+
+
+.content .taglist {
+   list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+
+
+  li {
+
+      padding: 0 2rem 1rem 0;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+
+}
+ 
+  

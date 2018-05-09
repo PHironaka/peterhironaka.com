@@ -1,15 +1,4 @@
-import React from 'react'
-import Link from 'gatsby-link'
-
-import github from '../img/github-icon.svg'
-import logo from '../img/placeholer-logo.svg'
-
-const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <svg width="247" height="55">
+<svg width="247" height="55" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <ellipse id="path-1" cx="23.35" cy="21.86" rx="23.35" ry="21.86"/>
     <ellipse id="path-3" cx="23.35" cy="21.86" rx="23.35" ry="21.86"/>
@@ -22,7 +11,9 @@ const Navbar = () => (
       <g id="Group" transform="matrix(1 0 0 -1 6 49)">
         <g id="Clipped">
           <g id="Shape-Clipped">
-           
+            <mask id="mask-2" fill="#fff">
+              <use xlink:href="#path-1"/>
+            </mask>
             <path d="M23.4 16.53c9.39 0 15.47-5.12 15.47-11.44 0-6.31-6.08-11.44-15.47-11.44S7.53-1.22 7.53 5.1c0 6.32 6.48 11.44 15.87 11.44zM0 21.1h47.38H0z" id="Shape" stroke="#F49322" stroke-width="2" mask="url(#mask-2)"/>
           </g>
         </g>
@@ -30,7 +21,9 @@ const Navbar = () => (
       <g id="Group" transform="translate(6 5)">
         <g id="Clipped">
           <g id="Shape-Clipped">
-          
+            <mask id="mask-4" fill="#fff">
+              <use xlink:href="#path-3"/>
+            </mask>
             <path d="M23.9 16.53c9.38 0 15.46-5.12 15.46-11.44 0-6.31-6.08-11.44-15.47-11.44S8.02-1.22 8.02 5.1c0 6.32 6.48 11.44 15.87 11.44zm-.51-16.6l.11 43.8-.11-43.8z" id="Shape" stroke="#F49322" stroke-width="2" mask="url(#mask-4)"/>
           </g>
         </g>
@@ -47,28 +40,3 @@ const Navbar = () => (
     </g>
   </g>
 </svg>
-
-        </Link>
-      </div>
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/blog">
-          Blog
-        </Link>
-
-        <Link className="navbar-item" to="/projects">
-          Projects
-        </Link>
-
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-      </div>
-      
-    </div>
-  </nav>
-)
-
-export default Navbar
