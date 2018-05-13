@@ -1,5 +1,7 @@
 backend:
-  name: git-gateway
+  name: hungry-williams-a3d476
+  identity_url: "https://hungry-williams-a3d476.netlify.com/.netlify/identity"
+  repo: PHironaka/test-gatsby-netlify
   branch: master
 
 media_folder: static/img

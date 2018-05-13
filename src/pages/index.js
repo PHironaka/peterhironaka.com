@@ -9,10 +9,8 @@ export default class IndexPage extends React.Component {
 
     return (
       <section className="section">
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Work</h1>
-          </div>
+        <div className="container home">
+            <h2 className="has-text-weight-bold is-size-2">Latest Work</h2>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (

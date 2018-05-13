@@ -9,6 +9,8 @@ export const ProjectPostTemplate = ({
   content,
   contentComponent,
   description,
+  repo,
+  project,
   tags,
   title,
   helmet,
@@ -25,6 +27,12 @@ export const ProjectPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <li>
+            <a href={repo} target="_blank">Repo</a>
+            </li>
+             <li>
+            <a href={project} target="_blank">Visit Site</a>
+            </li>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -49,6 +57,8 @@ ProjectPostTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
+  repo: PropTypes.string,
+  project: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
 }
@@ -61,6 +71,8 @@ const ProjectPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
+      repo={post.frontmatter.repo}
+      project={post.frontmatter.project}
       helmet={<Helmet title={`${post.frontmatter.title} | Project`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
@@ -85,6 +97,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        project
+        repo
         tags
       }
     }

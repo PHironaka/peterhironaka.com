@@ -1,7 +1,9 @@
 ---
 templateKey: project-post
-title: A beginners’ guide to brewing with Chemex
+title: Mr Leight landing page
 description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
+repo: http://labs.jensimmons.com/2017/01-003.html
+project: https://mrleight.com
 tags:
   - brewing
   - chemex
