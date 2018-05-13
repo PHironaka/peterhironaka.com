@@ -1,11 +1,8 @@
 backend:
-  name: hungry-williams-a3d476
-  identity_url: "https://hungry-williams-a3d476.netlify.com/.netlify/identity"
-  repo: PHironaka/test-gatsby-netlify
-  branch: master
-
-media_folder: static/img
-public_folder: /img
+  name: Hironaka Admin
+  display_url: https://unruffled-joliot-6bf9d9.netlify.com/
+  media_folder: static/img
+  public_folder: /img
 
 collections:
   - name: "blog"
@@ -17,6 +14,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
@@ -31,6 +29,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Reo", name: "repo", widget: "text"}
+      - {label: "Project", name: "project", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
