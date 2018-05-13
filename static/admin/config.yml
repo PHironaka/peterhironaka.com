@@ -1,7 +1,8 @@
 backend:
   name: Hironaka Admin
   display_url: https://unruffled-joliot-6bf9d9.netlify.com/
-  media_folder: static/assets
+
+media_folder: static/img
 
 collections:
   - name: "blog"
