@@ -1,4 +1,5 @@
 backend:
+  name: github
   repo: PHironaka/test-gatsby-netlify # Path to Github repository
   branch: master # Branch to update (optional; defaults to master)
 
