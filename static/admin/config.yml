@@ -1,5 +1,5 @@
 backend:
-  name: Hironaka 
+  name: test-repo 
 
 media_folder: static/img
 
