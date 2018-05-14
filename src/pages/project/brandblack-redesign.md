@@ -1,14 +1,18 @@
 ---
 templateKey: project-post
 title: Brandblack redesign
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
-repo: http://labs.jensimmons.com/2017/01-003.html
-project: https://brandblack.com
+date: 2018-05-13T00:00:00-07:00
+description: >-
+  Brewing with a Chemex probably seems like a complicated, time-consuming
+  ordeal, but once you get used to the process, it becomes a soothing ritual
+  that's worth the effort every time.
+repo: 'http://labs.jensimmons.com/2017/01-003.html'
+project: 'https://brandblack.com'
 tags:
   - brewing
   - chemex
 ---
-![chemex](/img/chemex.jpg)
+![](/static/img/brandblack_jan2018_rrp_1130-565x372.jpg)
 
 This week we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts.
 
