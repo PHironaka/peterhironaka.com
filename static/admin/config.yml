@@ -2,6 +2,7 @@ backend:
   name: test-repo
   branch: master # Branch to update (optional; defaults to master)
 
+display_url: https://unruffled-joliot-6bf9d9.netlify.com
 publish_mode: editorial_workflow
 media_folder: static/img
 
