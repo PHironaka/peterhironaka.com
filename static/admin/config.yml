@@ -1,8 +1,8 @@
 backend:
   name: test-repo
   branch: master # Branch to update (optional; defaults to master)
-  publish_mode: editorial_workflow
 
+publish_mode: editorial_workflow
 media_folder: static/img
 
 
