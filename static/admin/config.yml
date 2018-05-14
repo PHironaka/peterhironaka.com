@@ -1,7 +1,7 @@
 backend:
   name: Hironaka 
 
-media_folder: static/img/uploads
+media_folder: static/img
 
 collections:
   - name: "blog"
