@@ -1,11 +1,8 @@
 ---
 templateKey: project-post
 title: Brandblack redesign
-date: 2018-05-13T00:00:00-07:00
-description: >-
-  Brewing with a Chemex probably seems like a complicated, time-consuming
-  ordeal, but once you get used to the process, it becomes a soothing ritual
-  that's worth the effort every time.
+date: 2018-05-13T07:00:00.000Z
+description: Brewing with a Che
 repo: 'http://labs.jensimmons.com/2017/01-003.html'
 project: 'https://brandblack.com'
 tags:
