@@ -1,5 +1,6 @@
 backend:
-  name: test-repo 
+  name: test-repo
+  branch: master # Branch to update (optional; defaults to master)
 
 media_folder: static/img
 
