@@ -11,7 +11,7 @@ tags:
   - flavor
   - tasting
 ---
-![welcome](/img/26864530_2105055136447318_772581156745904128_n.jpg)
+![pete](/img/ty3szclg_400x400.jpg)
 
 We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
 
