@@ -2,7 +2,7 @@
 templateKey: about-page
 title: About our values
 ---
-![](/static/img/1304617.jpg)
+![](/img/143-chinatown-market-collab-1.jpg)
 
 ### Shade-grown coffee
 
