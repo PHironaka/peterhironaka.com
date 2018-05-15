@@ -23,19 +23,22 @@ export const ProjectPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
-            </h1>
-            <p>{description}</p>
+            </h2>
+            <ul className="project-links">
             <li>
             <a href={repo} target="_blank">Repo</a>
             </li>
              <li>
             <a href={project} target="_blank">Visit Site</a>
             </li>
+            </ul>
+            <p>{description}</p>
+
             <PostContent content={content} />
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
+              <div className="tags" style={{ marginTop: `3rem` }}>
                 <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map(tag => (
