@@ -5,7 +5,7 @@ backend:
 
 display_url: https://unruffled-joliot-6bf9d9.netlify.com
 publish_mode: editorial_workflow
-media_folder: /img/
+media_folder: /img
 
 
 collections:
