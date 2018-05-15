@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Adding SSL for...Free.!
+title: Adding SSL for...Free.
 date: 2018-05-15T21:18:04.049Z
 description: >-
   It's 2017, and if you're serving your website over HTTP, well then I don't
