@@ -4,12 +4,6 @@ title: Established 1987.
 ---
 ![test](/img/1304617.jpg)
 
-  For the past 5 years, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world. While it's been a blast and I still enjoy my role as a Producer, it's time for me to make the jump into the world of Web Development.
-layout: page
----
-
-## Established 1987.
-
 For the past 6years, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world. It's been a blast! Since May of 2017, I've been a Freelance Digital Producer and Web Developer.
 
 This website was built with Jekyll and its content is managed via [Siteleaf](https://siteleaf.com).
