@@ -22,8 +22,8 @@ export const ProjectPostTemplate = ({
       {helmet || ''}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
+          <div className="project-content ">
+            <h2 className="title">
               {title}
             </h2>
             <ul className="project-links">
