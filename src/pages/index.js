@@ -19,13 +19,9 @@ export default class IndexPage extends React.Component {
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
-                <p>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
                 <p>
                   {post.excerpt}
                   <br />
@@ -55,7 +51,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 300)
           id
           fields {
             slug

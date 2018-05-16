@@ -24,7 +24,6 @@ export default class ProjectPage extends React.Component {
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
                 </p>
                 <p>
                   {post.excerpt}
