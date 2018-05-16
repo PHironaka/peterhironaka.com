@@ -2,7 +2,7 @@
 templateKey: about-page
 title: Established 1987.
 ---
-![test](/img/1304617.jpg)
+<img src="/img/1304617.jpg">
 
 For the past 6years, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world. It's been a blast! Since May of 2017, I've been a Freelance Digital Producer and Web Developer.
 
