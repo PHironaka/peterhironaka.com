@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
+import github from '../img/github-icon.svg'
 
 export const ProjectPostTemplate = ({
   content,
@@ -28,7 +29,7 @@ export const ProjectPostTemplate = ({
             </h2>
             <ul className="project-links">
             <li>
-            <a href={repo} target="_blank">Repo</a>
+            <a href={repo} target="_blank"><img src={github}/> Repo</a>
             </li>
              <li>
             <a href={project} target="_blank">Visit Site</a>
