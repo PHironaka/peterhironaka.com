@@ -20,14 +20,21 @@ export default class ProjectPage extends React.Component {
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
+
+               <div
+                className="post-content--title">
+
                 <h2>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
-                                    <img src={externalLink} />
 
                   </Link>
                   
                 </h2>
+            <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
+            </div>
+                  <small>{post.frontmatter.date}</small>
+
             <img src={post.frontmatter.image}/>
 
                 <p>
@@ -67,8 +74,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             image
+            repo
             templateKey
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY")
           }
         }
       }

@@ -15,7 +15,7 @@ export default class BlogPage extends React.Component {
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
             .map(({ node: post }) => (
               <div
-                className="content"
+                className="blog-content"
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >

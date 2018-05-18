@@ -20,12 +20,18 @@ export default class IndexPage extends React.Component {
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
-                <h2>
+                   <div
+                className="post-content--title">
+
+                <h3>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
+
                   </Link>
-                  </h2>
-            <a href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
+                  
+                </h3>
+            <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
+            </div>
             <img src={post.frontmatter.image}/>
                   
                 <p>
