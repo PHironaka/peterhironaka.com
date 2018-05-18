@@ -30,7 +30,6 @@ export const ProjectPostTemplate = ({
             <h2 className="title">
               {title}
             </h2>
-            <img src={image} />
 
             <ul className="project-links">
             <li>
@@ -40,7 +39,10 @@ export const ProjectPostTemplate = ({
             <a href={project} target="_blank">Visit Site <img src={externalLink}/></a>
             </li>
             </ul>
-            <p>{description}</p>
+                        <p>{description}</p>
+
+                        <img src={image} />
+
 
             <PostContent content={content} />
             {tags && tags.length ? (

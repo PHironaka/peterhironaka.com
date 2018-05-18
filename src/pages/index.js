@@ -26,6 +26,7 @@ export default class IndexPage extends React.Component {
                   </Link>
                   </h2>
             <a href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
+            <img src={post.frontmatter.image}/>
                   
                 <p>
                   {post.excerpt}
@@ -63,6 +64,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            image
             repo
             templateKey
             date(formatString: "MMMM DD, YYYY")

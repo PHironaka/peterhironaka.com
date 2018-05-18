@@ -28,6 +28,7 @@ export default class ProjectPage extends React.Component {
                   </Link>
                   
                 </h2>
+            <img src={post.frontmatter.image}/>
 
                 <p>
                   {post.excerpt}
@@ -65,6 +66,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            image
             templateKey
             date(formatString: "MMMM DD, YYYY")
           }
