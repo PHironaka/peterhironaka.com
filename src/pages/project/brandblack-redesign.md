@@ -5,6 +5,7 @@ date: 2018-05-13T07:00:00.000Z
 description: Brewing with a Che
 repo: 'http://labs.jensimmons.com/2017/01-003.html'
 project: 'https://brandblack.com'
+image: /img/brandblack_jan2018_rrp_1130-565x372.jpg
 tags:
   - brewing
   - chemex
