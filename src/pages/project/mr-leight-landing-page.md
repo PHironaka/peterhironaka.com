@@ -8,6 +8,7 @@ description: >-
   that's worth the effort every time.
 repo: 'http://labs.jensimmons.com/2017/01-003.html'
 project: 'https://mrleight.com'
+image: /img/brandblack_jan2018_rrp_1130-565x372.jpg
 tags:
   - brewing
   - chemex
