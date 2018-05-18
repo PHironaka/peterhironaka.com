@@ -35,6 +35,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Repo", name: "repo", widget: "text"}
       - {label: "Project", name: "project", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
