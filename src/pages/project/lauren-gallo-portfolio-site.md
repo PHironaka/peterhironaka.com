@@ -7,6 +7,7 @@ description: >-
   Marketing & Communications Lead at Apple.
 repo: 'https://laurenmgallo.com'
 project: 'https://laurenmgallo.com'
+image: /img/lgallo.png
 tags:
   - portfolio
   - jekyll
