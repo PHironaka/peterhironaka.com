@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import externalLink from '../img/external-link.svg'
 
 export default class ProjectPage extends React.Component {
   render() {
@@ -19,12 +20,15 @@ export default class ProjectPage extends React.Component {
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
-                <p>
+                <h2>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
+                                    <img src={externalLink} />
+
                   </Link>
-                  <span> &bull; </span>
-                </p>
+                  
+                </h2>
+
                 <p>
                   {post.excerpt}
                   <br />

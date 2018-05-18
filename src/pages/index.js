@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import externalLink from '../img/external-link.svg'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -10,7 +11,7 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <div className="container home">
-            <h2 className="has-text-weight-bold is-size-2">Latest Work</h2>
+            <h2 className="has-text-weight-bold is-size-2">Personal Projects & Client Work</h2>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
@@ -19,15 +20,19 @@ export default class IndexPage extends React.Component {
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
+                <h2>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
+                  </h2>
+            <a href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
+                  
                 <p>
                   {post.excerpt}
                   <br />
                   <br />
                   <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
+                    Read More →
                   </Link>
                 </p>
               </div>
@@ -58,6 +63,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            repo
             templateKey
             date(formatString: "MMMM DD, YYYY")
           }

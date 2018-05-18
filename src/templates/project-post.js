@@ -5,12 +5,15 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 import github from '../img/github-icon.svg'
+import ProjectLinks from '../components/ProjectLinks'
+import externalLink from '../img/external-link.svg'
 
 export const ProjectPostTemplate = ({
   content,
   contentComponent,
   description,
   repo,
+  image,
   project,
   tags,
   title,
@@ -27,12 +30,14 @@ export const ProjectPostTemplate = ({
             <h2 className="title">
               {title}
             </h2>
+            <img src={image} />
+
             <ul className="project-links">
             <li>
             <a href={repo} target="_blank"><img src={github}/> Repo</a>
             </li>
              <li>
-            <a href={project} target="_blank">Visit Site</a>
+            <a href={project} target="_blank">Visit Site <img src={externalLink}/></a>
             </li>
             </ul>
             <p>{description}</p>
@@ -50,6 +55,11 @@ export const ProjectPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+
+             <ProjectLinks
+          previous={PostContent.previous}
+          next={PostContent.next}
+        />
           </div>
         </div>
       </div>
@@ -61,6 +71,7 @@ ProjectPostTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
+  image: PropTypes.string,
   repo: PropTypes.string,
   project: PropTypes.string,
   title: PropTypes.string,
@@ -76,6 +87,7 @@ const ProjectPost = ({ data }) => {
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
       repo={post.frontmatter.repo}
+      image= {post.frontmatter.image}
       project={post.frontmatter.project}
       helmet={<Helmet title={`${post.frontmatter.title} | Project`} />}
       tags={post.frontmatter.tags}
@@ -102,6 +114,7 @@ export const pageQuery = graphql`
         title
         description
         project
+        image
         repo
         tags
       }

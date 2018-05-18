@@ -43,6 +43,8 @@ export const ProductPageTemplate = ({
                     {heading}
                   </h3>
                   <p>{description}</p>
+
+                  <img src={image} />
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />
