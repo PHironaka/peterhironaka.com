@@ -7,7 +7,7 @@ description: >-
   the NY Times via the NYT API.
 repo: 'https://peterhironaka.com/'
 project: 'https://peterhironaka.com/'
-image: /img/28430653_172027963441621_538164646343868416_n.jpg
+image: /img/screenshot_2018-05-19 new york times tech leaderboard .jpg
 tags:
   - api
 ---
