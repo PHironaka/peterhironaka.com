@@ -7,13 +7,14 @@ For the past 6years, I've been a Digital and Social Media Content Producer, work
 
 This website was built with Gatsby.js and its content is managed via [Netlify CMS](https://netlifycms.com).
 
-### Skills / Projects I currently enjoy working on
-- Digital & Creative Production
-- Agency & Portfolio sites
-- Full Stack Web App Frameworks (Ruby on Rails, Django)
+### Projects and tech stacks I enjoy working on:
 - PWAs 
 - React
 - Templates (Shopify)
+- Full Stack Web App Frameworks (Ruby on Rails, Django)
+- Agency & Portfolio sites
+
+
 
 
 ### How to get a hold of me:
