@@ -16,12 +16,12 @@ export default class IndexPage extends React.Component {
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
               <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                className="content-post"
+                style={{ border: '1px solid #eaecee', padding: '2em 2em' }}
                 key={post.id}
               >
-                   <div
-                className="post-content--title">
+                 <div
+                className="index-content">
 
                 <h3>
                   <Link className="has-text-primary" to={post.fields.slug}>
@@ -31,6 +31,8 @@ export default class IndexPage extends React.Component {
                   
                 </h3>
             <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
+                             <p>{post.frontmatter.date}</p>
+
             </div>
             <img src={post.frontmatter.image}/>
                   
@@ -63,7 +65,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 300)
+          excerpt(pruneLength: 100)
           id
           fields {
             slug

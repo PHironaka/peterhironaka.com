@@ -32,8 +32,9 @@ export default class ProjectPage extends React.Component {
                   
                 </h2>
             <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
+                             <p>{post.frontmatter.date}</p>
+
             </div>
-                  <small>{post.frontmatter.date}</small>
 
             <img src={post.frontmatter.image}/>
 

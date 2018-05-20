@@ -14,18 +14,19 @@ export default class BlogPage extends React.Component {
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
             .map(({ node: post }) => (
+             
+             <Link className="has-text-primary" to={post.fields.slug}>
+
               <div
                 className="blog-content"
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
+                <h2>
                     {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
+                </h2>
+                                  <small>{post.frontmatter.date}</small>
+
                 <p>
                   {post.excerpt}
                   <br />
@@ -35,6 +36,8 @@ export default class BlogPage extends React.Component {
                   </Link>
                 </p>
               </div>
+                                </Link>
+
             ))}
         </div>
       </section>
