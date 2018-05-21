@@ -8,7 +8,7 @@ description: >-
   and Art. Gonna be tiiiiiiight.
 repo: 'https://basketball-is.fun/'
 project: 'https://basketball-is.fun/'
-image: /img/screen shot 2018-05-21 at 2.08.47 pm.png
+image: /img/fb-auth.png
 tags:
   - django
   - full stack
