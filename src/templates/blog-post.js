@@ -22,9 +22,9 @@ export const BlogPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="blog-container">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h2 className="blog-container--title">
               {title}
-            </h1>
+            </h2>
              <p>{date}</p>
 
             <p>{description}</p>

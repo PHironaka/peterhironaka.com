@@ -10,7 +10,7 @@ export default class ProjectPage extends React.Component {
 
     return (
       <section className="section">
-        <div className="container two">
+        <div className="container ">
             <h2>Personal Projects & Client Work</h2>
 
           {posts
@@ -22,7 +22,10 @@ export default class ProjectPage extends React.Component {
                 key={post.id}
               >
                  <div
-                className="index-content">
+                className="content-post--project">
+                <img src={post.frontmatter.image}/>
+
+                <div className="content-post--project--title">
 
                 <h3>
                   <Link className="has-text-primary" to={post.fields.slug}>
@@ -33,10 +36,7 @@ export default class ProjectPage extends React.Component {
                 </h3>
             <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
                              <p>{post.frontmatter.date}</p>
-
-            </div>
-            <img src={post.frontmatter.image}/>
-                  
+                          
                 <p>
                   {post.excerpt}
                   <br />
@@ -45,6 +45,15 @@ export default class ProjectPage extends React.Component {
                     Read More →
                   </Link>
                 </p>
+
+                          </div>   
+
+              
+                 
+
+            </div>
+                  
+            
 
               </div>
             ))}
@@ -67,7 +76,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 100)
+          excerpt(pruneLength: 200)
           id
           fields {
             slug

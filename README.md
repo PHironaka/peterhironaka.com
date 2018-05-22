@@ -1,5 +1,7 @@
 # Peter Hironaka Gatsby.js portfolio
 
+Staging: https://unruffled-joliot-6bf9d9.netlify.com/
+Production: https://peterhironaka.com
 
 
 ## Prerequisites
