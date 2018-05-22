@@ -39,24 +39,26 @@ export const ProjectPostTemplate = ({
             <a href={project} target="_blank">Visit Site <img src={externalLink}/></a>
             </li>
             </ul>
+
+                {tags && tags.length ? (
+              <div className="tags" style={{ marginTop: `3rem` }}>
+                <ul className="taglist">
+                  {tags.map(tag => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}> {tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
                         <p>{description}</p>
 
                         <img src={image} />
 
 
             <PostContent content={content} />
-            {tags && tags.length ? (
-              <div className="tags" style={{ marginTop: `3rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+        
 
              <ProjectLinks
           previous={PostContent.previous}

@@ -10,8 +10,8 @@ export default class IndexPage extends React.Component {
 
     return (
       <section className="section">
-        <div className="container home">
-            <h2 className="has-text-weight-bold is-size-2">Personal Projects & Client Work</h2>
+        <div className="container ">
+            <h2> Hello 👋🏼, my name is Peter Hironaka. I’m a Freelance Web Developer & Digital Producer based in sunny Los Angeles, California. Here are a few things I’ve been working on:</h2>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
@@ -44,6 +44,7 @@ export default class IndexPage extends React.Component {
                     Read More →
                   </Link>
                 </p>
+
               </div>
             ))}
         </div>
@@ -62,7 +63,8 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(limit: 7 sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           excerpt(pruneLength: 100)
@@ -74,6 +76,7 @@ export const pageQuery = graphql`
             title
             image
             repo
+            tags
             templateKey
             date(formatString: "MMMM DD, YYYY")
           }

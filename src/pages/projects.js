@@ -10,42 +10,42 @@ export default class ProjectPage extends React.Component {
 
     return (
       <section className="section">
-        <div className="container">
+        <div className="container two">
+            <h2>Personal Projects & Client Work</h2>
 
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
               <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                className="content-post"
+                style={{ border: '1px solid #eaecee', padding: '2em 2em' }}
                 key={post.id}
               >
+                 <div
+                className="index-content">
 
-               <div
-                className="post-content--title">
-
-                <h2>
+                <h3>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
 
                   </Link>
                   
-                </h2>
+                </h3>
             <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
                              <p>{post.frontmatter.date}</p>
 
             </div>
-
             <img src={post.frontmatter.image}/>
-
+                  
                 <p>
                   {post.excerpt}
                   <br />
                   <br />
                   <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
+                    Read More →
                   </Link>
                 </p>
+
               </div>
             ))}
         </div>
@@ -67,7 +67,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 100)
           id
           fields {
             slug

@@ -9,7 +9,7 @@ export default class BlogPage extends React.Component {
 
     return (
       <section className="section">
-        <div className="container">
+        <div className="container page">
           
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
