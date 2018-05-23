@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import externalLink from '../img/external-link.svg'
+import FadeIn from 'react-fade-in';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -9,6 +10,8 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
+          <FadeIn>  
+
       <section className="section">
         <div className="container two">
             <h2> Hello 👋🏼, my name is Peter Hironaka. I’m a Freelance Web Developer & Digital Producer based in sunny Los Angeles, California. Here are a few things I’ve been working on:</h2>
@@ -49,6 +52,8 @@ export default class IndexPage extends React.Component {
             ))}
         </div>
       </section>
+          </FadeIn>  
+
     )
   }
 }
