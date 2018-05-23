@@ -12,7 +12,7 @@ const TemplateWrapper = ({ children }) => (
      <Helmet>
 
                 <title>Peter Hironaka | Web Developer</title>
-                <link rel="canonical" href="https://peterhironaka.com.com/" />
+                <link rel="canonical" href="https://peterhironaka.com/" />
         		<meta name="theme-color" content="#000000" />
         		<meta property="og:type" content="website" />
         		<meta name="twitter:site" content="@peterhironaka" />
