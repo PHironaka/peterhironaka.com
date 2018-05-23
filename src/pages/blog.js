@@ -21,12 +21,12 @@ export default class BlogPage extends React.Component {
 
               <div
                 className="blog-content"
-                style={{ border: '1px solid #eaecee', padding: ' 1em 4em' }}
+                style={{ border: '1px solid #eaecee' }}
                 key={post.id}
               >
-                <h2>
+                <h3>
                     {post.frontmatter.title}
-                </h2>
+                </h3>
                                   <small>{post.frontmatter.date}</small>
 
                 <p>

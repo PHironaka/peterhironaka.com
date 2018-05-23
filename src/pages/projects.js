@@ -12,7 +12,6 @@ export default class ProjectPage extends React.Component {
     return (
       <section className="section">
         <div className="container ">
-            <h2>Personal Projects & Client Work</h2>
 
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')

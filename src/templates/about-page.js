@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
-import pistol from '../img/pistol.jpg'
+import pistol from '../img/space-pic.jpg'
 import FadeIn from 'react-fade-in';
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
