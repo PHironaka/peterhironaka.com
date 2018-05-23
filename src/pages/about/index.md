@@ -2,7 +2,7 @@
 templateKey: about-page
 title: Established 1987.
 ---
-For the past 6years, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world. It's been a blast! Since May of 2017, I've been a Freelance Digital Producer and Web Developer.
+Peter Hironaka was born in New York City, raised in Connecticut, and came of age in the great state of California. Since 2012, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world. It's been a blast! Since May of 2017, I've been a Freelance Digital Producer and Web Developer.
 
 This website was built with Gatsby.js and its content is managed via [Netlify CMS](https://netlifycms.com).
 
