@@ -7,6 +7,7 @@ import Content, { HTMLContent } from '../components/Content'
 import github from '../img/github-icon.svg'
 import ProjectLinks from '../components/ProjectLinks'
 import externalLink from '../img/external-link.svg'
+import FadeIn from 'react-fade-in';
 
 export const ProjectPostTemplate = ({
   content,
@@ -22,6 +23,8 @@ export const ProjectPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
+          <FadeIn>  
+
     <section className="section">
       {helmet || ''}
       <div className="container content">
@@ -75,6 +78,8 @@ export const ProjectPostTemplate = ({
         </div>
       </div>
     </section>
+          </FadeIn>  
+
   )
 }
 

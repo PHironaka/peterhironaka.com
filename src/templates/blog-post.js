@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
+import FadeIn from 'react-fade-in';
 
 export const BlogPostTemplate = ({
   content,
@@ -21,7 +22,10 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <div className="container content">
         <div className="columns">
+                  <FadeIn>  
+
           <div className="blog-container">
+
             <h2 className="blog-container--title">
               {title}
             </h2>
@@ -41,8 +45,12 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
-          </div>
+
         </div>
+                  </FadeIn>  
+
+        </div>
+        
       </div>
     </section>
   )

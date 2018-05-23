@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import FadeIn from 'react-fade-in';
 
 export default class BlogPage extends React.Component {
   render() {
@@ -14,12 +15,13 @@ export default class BlogPage extends React.Component {
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
             .map(({ node: post }) => (
+          <FadeIn>  
              
              <Link className="has-text-primary" to={post.fields.slug}>
 
               <div
                 className="blog-content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                style={{ border: '1px solid #eaecee', padding: ' 1em 4em' }}
                 key={post.id}
               >
                 <h2>
@@ -37,6 +39,8 @@ export default class BlogPage extends React.Component {
                 </p>
               </div>
                                 </Link>
+          </FadeIn>  
+
 
             ))}
         </div>

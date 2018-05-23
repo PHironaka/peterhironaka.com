@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import pistol from '../img/pistol.jpg'
+import FadeIn from 'react-fade-in';
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -11,11 +12,15 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
+          <FadeIn>  
             
              <div className="about-section">
 <img src={pistol}/>
               <PageContent className="about-content" content={content} />
+
             </div>
+                      </FadeIn>  
+
           </div>
         </div>
       </div>

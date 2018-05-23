@@ -146,6 +146,13 @@ ul {
   }
 }  
 
+.project-content {
+  
+  h2 {
+  margin:0;
+  }
+}
+
 .project-content--items {
   display:grid;
   grid-template-columns: 1fr 1fr;

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import externalLink from '../img/external-link.svg'
+import FadeIn from 'react-fade-in';
 
 export default class ProjectPage extends React.Component {
   render() {
@@ -16,6 +17,7 @@ export default class ProjectPage extends React.Component {
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
+          <FadeIn>  
               <div
                 className="content-post"
                 style={{ border: '1px solid #eaecee', padding: '2em 2em' }}
@@ -56,8 +58,10 @@ export default class ProjectPage extends React.Component {
             
 
               </div>
+        </FadeIn>
+
             ))}
-        </div>
+        </div>  
       </section>
     )
   }
