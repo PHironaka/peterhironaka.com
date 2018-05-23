@@ -27,7 +27,7 @@ export default class ProjectPage extends React.Component {
                 <img src={post.frontmatter.image}/>
 
                 <div className="content-post--project--title">
-
+                <div className="content-post--project--title--links">
                 <h3>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
@@ -37,7 +37,7 @@ export default class ProjectPage extends React.Component {
                 </h3>
             <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
                              <p>{post.frontmatter.date}</p>
-                          
+                   </div>       
                 <p>
                   {post.excerpt}
                   <br />

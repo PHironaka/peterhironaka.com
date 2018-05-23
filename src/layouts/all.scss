@@ -156,6 +156,7 @@ ul {
 .project-content--items {
   display:grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap:2em;
   @media screen and (max-width: 800px) {
 grid-template-columns:1fr ;
 grid-row-gap:2em;
@@ -265,7 +266,27 @@ grid-template-columns: 1fr ;
 
    
 }
+.content-post--project--title--links {
+  
+
+    display: grid;
+grid-template-columns: 1fr 1fr;
+grid-column-gap: 2em;
+   margin-bottom: 2em;
+    h3 {
+  margin:0;  
+} 
+
+p {
+margin:0;
+  }
 }
+   
+}
+
+
+
+
 
 
 
