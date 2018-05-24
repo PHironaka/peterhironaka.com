@@ -7,7 +7,7 @@ description: >-
   out and buy their stuff!
 repo: 'https://github.com/PHironaka/pleasures'
 project: 'https://pleasuresnow.com/'
-image: /img/screen shot 2018-05-21 at 1.53.30 pm.png
+image: /img/pleasures-min.png
 tags:
   - shopify
   - ecommerce
