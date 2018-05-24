@@ -11,9 +11,10 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
+      
           <FadeIn>  
 
-      <section className="section">
+      <section className="section-home">
         <div className="container two">
             <h2> Hello 👋🏼, my name is Peter Hironaka. I’m a Freelance Web Developer based in sunny Los Angeles, California. Here are a few things I’ve been working on:</h2>
           {posts

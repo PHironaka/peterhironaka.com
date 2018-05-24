@@ -10,7 +10,7 @@ export default class ProjectPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <section className="section">
+      <section className="section-home">
         <div className="container ">
 
           {posts

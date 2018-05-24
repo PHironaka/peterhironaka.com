@@ -9,7 +9,7 @@ export default class BlogPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <section className="section">
+      <section className="section-home">
         <div className="container page">
           
           {posts

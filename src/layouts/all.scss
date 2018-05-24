@@ -30,6 +30,10 @@ ul{
 }
 
 .section {
+  margin-top:2em;
+}
+
+.section-home {
   margin-top:4em;
 }
 
@@ -284,12 +288,43 @@ margin:0;
    
 }
 
-
-
-
-
-
-
 footer {
   margin: 3em 0;
+}
+
+
+.loader{
+  background-color:#fff;
+  position:fixed;
+  color:black;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0;
+  transform:translateY(-100%);
+  transition:300ms ease;
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.64, 0.05, 0.1, 1.01);
+}
+.loader div {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+@keyframes loader {
+  0% {
+    opacity:1;
+    transform:translateY(0%);
+  }
+  75% {
+    opacity:1;
+    transform:translateY(0%);
+  }
+  100% {
+    opacity:1;
+    transform:translateY(-100%);
+  }
 }
