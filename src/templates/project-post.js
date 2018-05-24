@@ -36,10 +36,10 @@ export const ProjectPostTemplate = ({
 
             <ul className="project-links">
             <li>
-            <a href={repo} target="_blank"><img src={github} name="github" alt="github"/> Repo</a>
+            <a href={repo} target="_blank" rel="noopener"><img src={github} name="github" alt="github"/> Repo</a>
             </li>
              <li>
-            <a href={project} target="_blank">Visit Site <img src={externalLink}  alt="Visit Site"/></a>
+            <a href={project} target="_blank" rel="noopener">Visit Site <img src={externalLink}  alt="Visit Site"/></a>
             </li>
             </ul>
           <div className="project-content--items ">
