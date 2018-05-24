@@ -11,7 +11,7 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      
+
           <FadeIn>  
 
       <section className="section-home">
@@ -35,11 +35,11 @@ export default class IndexPage extends React.Component {
                   </Link>
                   
                 </h3>
-            <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink}/></a>
+            <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink} name="Visit Site" /></a>
                              <p>{post.frontmatter.date}</p>
 
             </div>
-            <img src={post.frontmatter.image}/>
+            <img src={post.frontmatter.image} name={post.frontmatter.title} />
                   
                 <p>
                   {post.excerpt}
