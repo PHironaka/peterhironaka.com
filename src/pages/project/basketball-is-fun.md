@@ -8,7 +8,7 @@ description: >-
   and Art. Gonna be tiiiiiiight.
 repo: 'https://github.com/PHironaka/bi-fun'
 project: 'https://basketball-is.fun/'
-image: /img/fb-auth.png
+image: /img/fb-auth-min.png
 tags:
   - django
   - full stack
