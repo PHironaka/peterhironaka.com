@@ -1,13 +1,13 @@
 ---
 templateKey: project-post
 title: NY Times Tech Leaderboard
-date: 2017-08-26T14:48:51-07:00
+date: 2017-08-26T21:48:51.000Z
 description: >-
   Built a front end app that dyanmically pulls in the latest Tech Stories from
   the NY Times via the NYT API.
 repo: 'https://github.com/PHironaka/NYT-Tech-Report'
 project: 'https://phironaka.github.io/NYT-Tech-Report/'
-image: /img/screenshot_2018-05-19 new york times tech leaderboard .jpg
+image: /img/screenshot_2018-05-19 new york times tech leaderboard -min.jpg
 tags:
   - api
   - nytimes
