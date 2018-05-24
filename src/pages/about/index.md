@@ -2,7 +2,7 @@
 templateKey: about-page
 title: Established 1987.
 ---
-Peter Hironaka was born in New York City, raised in Connecticut, and came of age in the great state of California. Since 2012, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world. It's been a blast! Since May of 2017, I've been a Freelance Digital Producer and Web Developer.
+Peter Hironaka was born in New York City, raised in Connecticut, and came of age in the great state of California. Since 2012, Peter has been a Digital and Social Media Content Producer, working with some of the coolest brands in the world (Nike, Hulu, Old Spice, to name a few).  While Peter still maintains his discipline as a Digital Producer, he has
 
 This website was built with [Gatsby.js ](gatsbyjs.org)and its content is managed via [Netlify CMS](netlifycms.org).
 
