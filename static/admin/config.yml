@@ -3,7 +3,7 @@ backend:
   repo: PHironaka/test-gatsby-netlify # Path to Github repository
   branch: master # Branch to update (optional; defaults to master)
 
-display_url: https://unruffled-joliot-6bf9d9.netlify.com
+display_url: https://peterhironaka.com
 # publish_mode: editorial_workflow
 media_folder: "static/img" # Folder where user uploaded files should go
 public_folder: "img"
