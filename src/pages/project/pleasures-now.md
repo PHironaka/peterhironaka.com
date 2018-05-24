@@ -5,8 +5,8 @@ date: 2018-02-22T21:48:36.000Z
 description: >-
   Pleasures. An altered state of being. I built the E-commerce site. Check it
   out and buy their stuff!
-repo: 'https://peterhironaka.com/'
-project: 'https://peterhironaka.com/'
+repo: 'https://github.com/PHironaka/pleasures'
+project: 'https://pleasuresnow.com/'
 image: /img/screen shot 2018-05-21 at 1.53.30 pm.png
 tags:
   - shopify
