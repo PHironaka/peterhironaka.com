@@ -12,4 +12,4 @@ tags:
   - portfolio
   - jekyll
 ---
-Personal portfolio site of Lauren Gallo - who currently serves as Senior Brand Marketing & Communications Lead at Apple.Personal portfolio site of Lauren Gallo - who currently serves as Senior Brand Marketing & Communications Lead at Apple.
+Designed & developed the personal portfolio site of Lauren Gallo - an Senior Marketing executive who's worked for brands such as Nike, Apple and Soho House.
