@@ -39,7 +39,7 @@ export const ProjectPostTemplate = ({
             <a href={repo} target="_blank"><img src={github} name="github" alt="github"/> Repo</a>
             </li>
              <li>
-            <a href={project} target="_blank">Visit Site <img src={externalLink} alt="Visit Site"/></a>
+            <a href={project} target="_blank">Visit Site <img src={externalLink}  alt="Visit Site"/></a>
             </li>
             </ul>
           <div className="project-content--items ">
@@ -63,7 +63,7 @@ export const ProjectPostTemplate = ({
 
             <div className="project-content--image">
   
-                        <img src={image} alt={title} />
+                        <img src={image} alt={title} name={title} />
 
 </div>
 </div>
