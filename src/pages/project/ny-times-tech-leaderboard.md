@@ -1,7 +1,7 @@
 ---
 templateKey: project-post
 title: NY Times Tech Leaderboard
-date: 2018-05-18T21:48:51.836Z
+date: 2017-08-26T14:48:51-07:00
 description: >-
   Built a front end app that dyanmically pulls in the latest Tech Stories from
   the NY Times via the NYT API.
