@@ -1,13 +1,13 @@
 ---
 templateKey: project-post
 title: Scout Master
-date: 2017-05-19T16:56:58-06:00
+date: 2017-05-19T22:56:58.000Z
 description: >-
   Scout Master is a web application designed to help Producers find and track
   locations. Built with Ruby on Rails.
 repo: 'https://github.com/PHironaka/scout-master'
 project: 'https://agile-inlet-60248.herokuapp.com/'
-image: /img/scout-master-screen.png
+image: /img/scout-master-screen-min.png
 tags:
   - rails
   - web app
