@@ -10,5 +10,8 @@ project: 'https://peterhironaka.com/'
 image: /img/screenshot_2018-05-19 new york times tech leaderboard .jpg
 tags:
   - api
+  - nytimes
 ---
-Built a front end app that dyanmically pulls in the latest Tech Stories from the NY Times via the NYT API.
+The New York Times is one of the longest running and most well respected institutions in the world. They also have a wonderful API that can be used to query a number of different requests. 
+
+In my first test with their API, I built a simple front end app that dynamically pulls in the latest  stories  tagged with 'Technology' from the NY Times.
