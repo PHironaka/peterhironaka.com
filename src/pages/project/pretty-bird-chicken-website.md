@@ -1,0 +1,15 @@
+---
+templateKey: project-post
+title: Pretty Bird Chicken website
+date: 2018-05-25T02:14:31.952Z
+description: >-
+  Pretty Bird Chicken is fried chicken restaurant founded by Viet Phan in Salt
+  Lake City. 
+repo: 'https://github.com/PHironaka/pretty-bird'
+project: 'https://prettybirdchicken.com/'
+image: /img/prettybird.png
+tags:
+  - jekyll
+  - restaurant
+---
+Pretty Bird Chicken is a new restaurant located in Salt Lake City and founded by Chef Viet Pham. Pretty Bird, famous for their Nashville style Fried Chicken, instantly became a local favorite spot. I was fortunate enough to build a simple website to display their menu items.
