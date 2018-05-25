@@ -11,7 +11,7 @@ module.exports = {
         short_name: "Hironaka",
         start_url: "/",
         background_color: "#f7f0eb",
-        theme_color: "#a2466c",
+        theme_color: "#000000",
         display: "standalone",
         icons: [
           {
@@ -19,12 +19,12 @@ module.exports = {
             // directory in /public during development and build, so
             // assuming your favicons are in /static/favicons,
             // you can reference them here
-            src: `./img/android-chrome-192x192.png`,
+            src: `../android-chrome-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
           },
           {
-            src: `./img/android-chrome-512x512.png`,
+            src: `../android-chrome-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
           },
