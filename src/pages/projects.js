@@ -19,7 +19,7 @@ export default class ProjectPage extends React.Component {
           <FadeIn>  
               <div
                 className="content-post"
-                style={{ border: '1px solid #eaecee', padding: '2em 2em' }}
+                style={{ border: '1px solid #eaecee' }}
                 key={post.id}
               >
                  <div

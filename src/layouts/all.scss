@@ -286,8 +286,18 @@ padding: 0 5px;
 grid-template-columns: 1fr 1fr;
 grid-column-gap: 2em;
    margin-bottom: 2em;
+
+    @media screen and (max-width: 900px) {
+grid-template-columns: 1fr ;
+   
+}
+
     h3 {
   margin:0;  
+      @media screen and (max-width: 900px) {
+margin:1em 0;
+   
+}
 } 
 
 p {
