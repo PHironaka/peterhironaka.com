@@ -39,7 +39,7 @@ export default class IndexPage extends React.Component {
                              <p>{post.frontmatter.date}</p>
 
             </div>
-            <img src={post.frontmatter.image} name={post.frontmatter.title} />
+            <img src={post.frontmatter.image} alt={post.frontmatter.title} />
                   
                 <p>
                   {post.excerpt}
