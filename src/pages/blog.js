@@ -21,7 +21,7 @@ export default class BlogPage extends React.Component {
 
               <div
                 className="blog-content"
-                style={{ border: '1px solid #eaecee' }}
+                
                 key={post.id}
               >
                 <h3>
