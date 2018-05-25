@@ -2,6 +2,8 @@
 templateKey: about-page
 title: Established 1987.
 ---
+### Established 1987.
+
 Hello! I was born in New York City, raised in Connecticut, and came of age in the great state of California. Since 2012, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world (Nike, Hulu, Old Spice, to name a few).  While I still enjoy Producing Digital content, I've decided to pursue a path as a Web Developer. This website is powered by [Gatsby.js ](gatsbyjs.org)and its content is managed via [Netlify CMS](netlifycms.org).
 
 ### Projects and tech stacks I enjoy working on:
