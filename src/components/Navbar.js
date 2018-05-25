@@ -23,24 +23,18 @@ const Navbar = () => (
       </div>
       <div className="navbar-start">
 
-      <ul>
-      <li>
         <Link to="/projects" itemprop="url">
           Projects
         </Link>
-</li>
-        <li>
+
         <Link to="/blog" itemprop="url">
           Notes
         </Link>
-        </li>
-
-        <li>
+       
         <Link to="/about" itemprop="url">
           About
         </Link>
-        </li>
-        </ul>
+      
   
       </div>
       

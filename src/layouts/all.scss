@@ -93,46 +93,13 @@ grid-template-columns: 2fr 1fr;
 .navbar-brand .navbar-item figure{
   margin:1em 0;
 }
-  .navbar-start ul {
+  .navbar-start {
   justify-self:end;
   margin:1em 0;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  list-style:none;
-  li {
+  
+  a {
   margin:10px;
 
-    &:after {
-    position: absolute;
-    transition: .3s;
-    content: '';
-    width: 0;
-    left: 50%;
-    bottom: 0;
-    height: 1px;
-    margin-left: -5.5px;
-    background: #333;
-    
-
-    &:nth-of-type(2):after {
-    left: 0;
-  }
-  &:nth-of-type(3):after {
-    right: 0;
-    left: auto;
-  }
-  }
-
-   &:hover {
-    cursor: pointer;
-    &:after {
-      width: 100%;
-      left: 10%;
-
-         
-    }
-
-  }
 
 
 

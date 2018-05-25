@@ -35,7 +35,7 @@ export default class IndexPage extends React.Component {
                   </Link>
                   
                 </h3>
-            <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink} name="Visit Site" /></a>
+            <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank"><img src={externalLink} alt="Visit Site" /></a>
                              <p>{post.frontmatter.date}</p>
 
             </div>
