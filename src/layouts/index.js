@@ -15,6 +15,7 @@ const TemplateWrapper = ({ children }) => (
                 <link rel="canonical" href="https://peterhironaka.com/" />
         		<meta name="theme-color" content="#000000" />
         		<meta property="og:type" content="website" />
+            <meta name="twitter:card" content="summary" />
         		<meta name="twitter:site" content="@peterhironaka" />
           <meta name="description" content="Peter Hironaka is a Freelance Web Developer based in Los Angeles." />
           <meta name="twitter:image" content={pistol} />
