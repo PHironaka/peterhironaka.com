@@ -17,7 +17,7 @@ const TemplateWrapper = ({ children }) => (
         		<meta property="og:type" content="website" />
         		<meta name="twitter:site" content="@peterhironaka" />
           <meta name="description" content="Peter Hironaka is a Freelance Web Developer based in Los Angeles." />
-          <meta name="twitter:image" value={pistol} />
+          <meta name="twitter:image" content={pistol} />
           <meta property="og:image" content={pistol} />
         <link rel="icon" type="image/png" sizes="32x32" href={pistol} />
 
