@@ -8,9 +8,7 @@ description: >-
 tags:
   - ssl
 ---
-## Update to this post (May 2018):
-
-I've recently switched from Cloudflare to Netlify and it's a much more intuitive process. Only a matter of adding Netlify's custom domain nameservers to your DNS and  clicking and then adding your custom domain. That's basically it, Netlify does the rest of the work for you.
+_**Update to this post (May 2018): **I've recently switched from Cloudflare to Netlify and it's a much more intuitive process. Only a matter of adding Netlify's custom domain nameservers to your DNS and  clicking and then adding your custom domain. That's basically it, Netlify does the rest of the work for you._
 
 Seriously though, it's time to upgrade.
 Google has already made it known that sites using HTTPS will increase their search ranking, so needless to say it should be part of every dev's launch to dos.
