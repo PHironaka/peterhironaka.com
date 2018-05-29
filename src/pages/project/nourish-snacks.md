@@ -1,7 +1,7 @@
 ---
 templateKey: project-post
 title: Nourish Snacks
-date: 2018-05-28T22:05:31.651Z
+date: 2018-05-27T15:05:31-07:00
 description: Nourish Snacks offer an assortment of delicious granola bites.
 repo: 'https://nourishsnacks.com'
 project: 'https://nourishsnacks.com'
