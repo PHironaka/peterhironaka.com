@@ -203,19 +203,26 @@ max-width:100%;
       background: #fff;
     border-radius: 4px;
     border: 1px solid rgb(234, 236, 238);
-    box-shadow: 0 3px 10px rgba(25, 17, 34, 0.05);
+    box-shadow: 0 2px 8px rgba(25, 17, 34, 0.05);
     padding-left: 3.15rem;
     padding-right: 3.15rem;
     
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1),transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1),transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .button.is-small {
+    margin-bottom:2em;
+    display:block;
+    }
+
      @media screen and (max-width: 700px) {
  padding: 0 5px;
     border: none;
     box-shadow: none;
 
 }
+
 
 
     &:hover {
@@ -258,6 +265,11 @@ p {
   max-width:700px;
   margin: 0 ;
   padding: 0 ;
+
+  svg {
+  max-width:450px;
+  margin: 1em 0;
+}
 
  ul {
 
