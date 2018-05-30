@@ -29,4 +29,4 @@ To be clear, there's absolutely nothing wrong with Jekyll or Middleman or any ot
 
 ![lighthouse](/img/dedy6d3vmaajqh0.jpg)
 
-This is "the future of the web": Javascript, APIs, and Markup: more commonly known as JAM stack. If you don't need a server or a database, then why use one? It only adds costs and developer time to your project. The goal of any web project should be to get
+This is "the future of the web": Javascript, APIs, and Markup: more commonly known as JAM stack. If you don't need a server or a database, then why use one? It only adds costs and developer time to your project. The goal of any web project should be to host content and distribute that content to its users as quickly as possible.
