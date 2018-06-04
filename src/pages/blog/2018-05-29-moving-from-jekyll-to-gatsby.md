@@ -6,6 +6,8 @@ description: Documenting my decision to migrate my portfolio site from Jekyll to
 tags:
   - gatsby
   - jekyll
+  - netlify cms
+  - react
 ---
 For the past few months, I'd kinda been waffling back and forth between a few states - it seemed like I was overdue for a facelift, but the questions remained: Do I update my personal site? Is it worth it? Why do I need to update?
 
@@ -30,3 +32,13 @@ To be clear, there's absolutely nothing wrong with Jekyll or Middleman or any ot
 ![lighthouse](/img/dedy6d3vmaajqh0.jpg)
 
 This is "the future of the web": Javascript, APIs, and Markup: more commonly known as JAM stack. If you don't need a server or a database, then why use one? It only adds costs and developer time to your project. The goal of any web project should be to host content and distribute that content to its users as quickly as possible.
+
+## Picking my CMS
+
+There are many different ways you can manage content these days, especially within the JAM stack. There's a way to still use Wordpress via their API w/Gatsby. Contentful was another great CMS solution I'd hear about. The only issue was its pricing tiers. While they do offer a free tier, you're obligated to placing their logo branding in the footer of your site. Next tier up was a few hundred bucks a month - no can do on my budget.
+
+After reading through Gatsby's plugins they have listed on their site, I found [Netlify's CMS](https://www.netlifycms.org/) and was instantly impressed with its out of the box functionality. Before I set it up with this site, I decided to follow along a Netlify CMS/Gatsby test tutorial I found on Github, which ended up being extremely useful. Once I figured out how add in my data points (blog posts, projects etc) to the CMS, it was pretty smooth sailing.
+
+## Closing
+
+Really excited to keep this site updated with my latest projects as well as continuing to publish new blog posts. The next big test will be to implement different data type and eventually using this stack to build for client projects.
