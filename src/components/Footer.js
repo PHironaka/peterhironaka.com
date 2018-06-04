@@ -11,11 +11,21 @@ const Footer = () => (
    	<small>
         © {new Date().getFullYear()} Peter Hironaka, All Rights Reserved
       </small>
+
+      <ul className="social">
+        <li><Link to="/">Instagram</Link></li>
+        <li><Link to="/">Twitter</Link></li>
+        <li><Link to="/">Codepen</Link></li>
+
+
+      </ul>
       
       </div>
       
     </div>
   </footer>
+
+
 )
 
 export default Footer
