@@ -330,6 +330,22 @@ margin:0;
 
 footer {
   margin: 3em 0;
+
+  .footer-start {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+    ul.social {
+    margin:0;
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    list-style:none;
+    justify-content:right;
+    a {
+    font-size:.9em;
+    }
+    }
+  }
 }
 
 
