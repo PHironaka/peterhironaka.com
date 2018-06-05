@@ -17,7 +17,7 @@ const TemplateWrapper = ({ children }) => (
           <meta name="description" content="Peter Hironaka is a Freelance Web Developer based in Los Angeles." />
         		<meta property="og:type" content="website" />
           <meta property="og:image" content={pistol} />
-            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:card" content="summary_large_image" />
         		<meta name="twitter:site" content="@peterhironaka" />
             <meta name="twitter:title" content="Peter Hironaka" />
             <meta name="twitter:description" content="Peter Hironaka is a Freelance Web Developer based in Los Angeles." />
