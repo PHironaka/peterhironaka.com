@@ -15,7 +15,7 @@ const Footer = () => (
       <ul className="social">
         <li><a href="https://instagram.com/peterhironaka" target="_blank">Instagram</a></li>
         <li><a href="https://twitter.com/peterhironaka" target="_blank">Twitter</a></li>
-        <li><a href="https://codepen.io/peterhironaka" target="_blank">Codepen</a></li>
+        <li><a href="https://github.com/phironaka" target="_blank">Github</a></li>
 
 
       </ul>

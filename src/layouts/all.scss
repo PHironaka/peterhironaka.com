@@ -329,7 +329,7 @@ margin:0;
 }
 
 footer {
-  margin: 3em 0;
+  margin: 4em 0 1em;
 
   .footer-start {
   display: grid;
@@ -338,9 +338,10 @@ footer {
     ul.social {
     margin:0;
     display:grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 70px 70px 70px;
     list-style:none;
     justify-content:right;
+    text-align:right;
     a {
     font-size:.9em;
     }
