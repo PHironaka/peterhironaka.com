@@ -7,12 +7,9 @@ module.exports = {
       {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        // Setting a color is optional.
-        easing: 'ease', 
-        speed: 800, 
-        minimum: 0.1,
-        // Disable the loading spinner.
-        showSpinner: false,
+        color: `#191919`,
+        minimum: 0.5,
+        trickle: false,
       },
     },
     {
