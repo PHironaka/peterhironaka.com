@@ -10,7 +10,7 @@ module.exports = {
         color: `#191919`,
         minimum: 0.2,
         trickle: false,
-        showSpinner: false;
+        showSpinner: false,
       },
     },
     {
