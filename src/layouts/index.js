@@ -25,7 +25,7 @@ const TemplateWrapper = ({ children }) => (
             <meta name="twitter:title" content="Peter Hironaka" />
             <meta name="twitter:url" content="https://peterhironaka.com" />
             <meta name="twitter:description" content="Peter Hironaka is a Freelance Web Developer based in Los Angeles." />
-          <meta name="twitter:image" content={pistol} />
+          <meta name="twitter:image" content="https://peterhironaka.com/static/space-pic.0271d58c.jpg" />
         <link rel="icon" type="image/png" sizes="32x32" href={pistol} />
 
       </Helmet>
