@@ -4,17 +4,17 @@ module.exports = {
   },
   plugins: [
 
-    {
-    resolve: `gatsby-plugin-nprogress`,
-    options: {
-      // Setting a color is optional.
-      color: `tomato`,
-      // Disable the loading spinner.
-      showSpinner: true,
+      {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        easing: 'ease', 
+        speed: 800, 
+        minimum: 0.1,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
     },
-  },
-
-
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

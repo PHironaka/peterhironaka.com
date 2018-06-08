@@ -6,6 +6,7 @@ import logo from '../img/placeholer-logo.svg'
 const Navbar = () => (
 
   <nav className="navbar is-transparent">
+
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" >
