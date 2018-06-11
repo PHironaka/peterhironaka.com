@@ -240,7 +240,7 @@ transform:translateY(-4px);box-shadow:0 10px 42px rgba(25, 17, 34, 0.1);-webkit-
 
 .index-content {
   display:grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: minmax(max-content,27px) 20px;
   grid-column-gap: 2rem;
   margin-bottom:2em;
 
@@ -311,7 +311,7 @@ border: none;
   
 
     display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: minmax(max-content,27px) 20px;
 grid-column-gap: 2em;
    margin-bottom: 2em;
 
