@@ -25,6 +25,7 @@ export const BlogPostTemplate = ({
                   <FadeIn>  
 
           <div className="blog-container">
+                        <div className="blog-container--post">
 
             <h2 className="blog-container--title">
               {title}
@@ -33,6 +34,12 @@ export const BlogPostTemplate = ({
 
             <p>{description}</p>
             <PostContent content={content} />
+
+            </div>
+
+
+                        <div className="blog-container--credits">
+
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -45,6 +52,7 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+            </div>
 
         </div>
                   </FadeIn>  

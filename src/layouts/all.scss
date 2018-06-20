@@ -120,13 +120,33 @@ img {
   max-width:100%;
 }
 
+.tagPage {
+   list-style: none;
+  margin-bottom: 0;
+  display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+
+  li {
+margin: 1em 0;
+
+a {
+  border: 1px solid #eee;
+padding: 8px 15px;
+}
+
+  }
+
+}
+
+
 
 
 .content .taglist {
    list-style: none;
   margin-bottom: 0;
   display:grid;
-  grid-template-columns: auto auto auto auto;
+    grid-template-columns: minmax(max-content, 73px) 1fr;
 
 
   li {
@@ -270,9 +290,16 @@ p {
 }
 
 .blog-container {
-  max-width:700px;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  grid-column-gap: 2em;
   margin: 0 ;
   padding: 0 ;
+
+  @media screen and (max-width: 900px) {
+grid-template-columns: 1fr ;
+   
+}
 
   svg {
   max-width:450px;
