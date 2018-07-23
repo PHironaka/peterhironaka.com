@@ -7,7 +7,7 @@ description: >-
   app. Basketball Is Fun is a community built around Basketball News, Culture
   and Art. Gonna be tiiiiiiight.
 repo: 'https://github.com/PHironaka/bi-fun'
-project: 'http://bifun.herokuapp.com/'
+project: 'http://basketball-is.fun/'
 image: /img/fb-auth-min.png
 tags:
   - django
