@@ -6,7 +6,7 @@ title: Established 1987.
 
 Since 2012, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world (Nike, Hulu, Old Spice, to name a few).  While I still enjoy Producing Digital content, I've decided to pursue a path as a Web Developer. This website is powered by [Gatsby.js ](gatsbyjs.org)and its content is managed via [Netlify CMS](netlifycms.org).
 
-### Projects and tech stacks I enjoy spending time with:
+### The types of projects and tech stacks I enjoy spending time with:
 
 * Progressive Web Apps (PWA)
 * Gatsby.js
@@ -26,4 +26,4 @@ If you're interested in collaborating on a project or just want to say hello, pl
 * [Github](https://github.com/PHironaka)
 * [Working Not Working](https://workingnotworking.com/peterhironaka)
 
-[Here is a link](<peter-hironaka-site-2018/static/img/pjh-resume-min (1).pdf>) to my resume.
+[Here is a link ](https://peterhironaka.com/img/pjh-resume-min%20(1).pdf)to my resume.
