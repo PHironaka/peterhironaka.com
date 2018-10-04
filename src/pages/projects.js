@@ -11,7 +11,7 @@ export default class ProjectPage extends React.Component {
 
     return (
       <section className="section-home">
-        <div className="container ">
+        <div className="container page">
 
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')

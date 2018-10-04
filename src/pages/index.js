@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import externalLink from '../img/external-link.svg'
 import FadeIn from 'react-fade-in';
+import { kebabCase } from 'lodash'
 
 
 export default class IndexPage extends React.Component {
@@ -16,17 +17,21 @@ export default class IndexPage extends React.Component {
 
       <section className="section-home">
         <div className="container two">
-            <h2> Hello 👋🏼, my name is Peter Hironaka. I’m a Freelance Web Developer based in sunny Los Angeles, California. Here are a few things I’ve been working on:</h2>
+            <h2> Hello, my name is Peter Hironaka. I’m a Freelance Web Developer based in sunny Los Angeles, California. Here are a few things I’ve recently worked on:</h2>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
               <div
                 className="content-post"
-                style={{ border: '1px solid #eaecee', padding: '2em 2em' }}
+               
                 key={post.id}
               >
                  <div
                 className="index-content">
+
+     <div
+                className="index-content--link">
+                
 
                 <h3>
                   <Link className="has-text-primary" to={post.fields.slug}>
@@ -35,23 +40,33 @@ export default class IndexPage extends React.Component {
                   </Link>
                   
                 </h3>
-            <a className="post-content--external-link" href={post.frontmatter.project} target="_blank"><img src={externalLink} alt="Visit Site" /></a>
-                             <p>{post.frontmatter.date}</p>
+                <div className="index-tags">
+ {post.frontmatter.tags.map(tag => (
+                    
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  
+                  ))}
+                  </div>
 
             </div>
+
+            </div>
+            <div className="post-image">
             <img src={post.frontmatter.image} alt={post.frontmatter.title} />
                   
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Read More →
-                  </Link>
-                </p>
-
+              </div>
+                
               </div>
             ))}
+
+            <div className="all-projects">
+
+                  <Link className="has-text-primary" to='/projects'>
+                   View all projects >
+
+                  </Link>
+              </div>
+                  
         </div>
       </section>
           </FadeIn>  
@@ -70,7 +85,7 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(limit: 7 sort: { order: DESC, fields: [frontmatter___date] }
+    allMarkdownRemark( limit:12 sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
         node {
