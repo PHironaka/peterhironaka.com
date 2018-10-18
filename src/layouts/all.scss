@@ -73,22 +73,24 @@ max-width:100%;
 .content-post {
   display:grid;
   grid-template-columns:  1fr;
-    -webkit-transition: all .2s;
-    transition: all .2s;
+
     padding: 1em 0;
   &:hover .post-image{
-    display: block;
-    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
--webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
--moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity:1;
+    
   }
+
+  .content-post:hover .post-image {
+  transform:translateY(-100%);
+}
     .post-image {
   position: absolute;
   left: 40%;
   max-width:250px;
-  display:none;
+  opacity:0;
   margin-top:-20px;
-
+ transition: transform 250ms;
+  vertical-align: bottom;
   }
 
 
@@ -140,9 +142,26 @@ grid-template-columns: 2fr 1fr;
   
   a {
   margin:10px;
+      position: relative;
+    transition: .3s;
+&:after {
+      position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    top:26px;
+    height: 1px;
+    background: #333;
+}
 
-
-
+ &:hover {
+    &:after {
+      width: 100%;
+      left: 0;
+    }}
+    
 
 
 
