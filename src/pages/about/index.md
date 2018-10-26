@@ -4,7 +4,7 @@ title: Established 1987.
 ---
 ### Established 1987.
 
-Since 2012, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world (Nike, Hulu, Old Spice, to name a few).  While I still enjoy Producing Digital content, I've decided to pursue a path as a Web Developer. This website is powered by [Gatsby.js ](gatsbyjs.org)and its content is managed via [Netlify CMS](netlifycms.org).
+Since 2012, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world (Nike, Hulu, Old Spice, to name a few).  While I still enjoy Producing Digital content, I've decided to pursue a path as a Web Developer. This website is powered by [Gatsby.js ](https://gatsbyjs.org)and its content is managed via [Netlify CMS](https://netlifycms.org).
 
 ### The types of projects and tech stacks I enjoy spending time with:
 
