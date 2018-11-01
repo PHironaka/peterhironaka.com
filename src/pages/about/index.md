@@ -8,12 +8,11 @@ Since 2012, I've been a Digital and Social Media Content Producer, working with 
 
 ### The types of projects and tech stacks I enjoy spending time with:
 
-* Progressive Web Apps (PWA)
+* Progressive Web Apps 
 * Gatsby.js
 * JS Frameworks (Mainly React.js)
-* Styled Components
 * Custom Shopify templates (Storefront API, Slate)
-* Full Stack Web App Frameworks (Ruby on Rails, Django,)
+* Full Stack Web App Frameworks (Ruby on Rails, Django)
 
 ### How to get a hold of me:
 
