@@ -91,6 +91,12 @@ max-width:100%;
   margin-top:-20px;
  transition: transform 250ms;
   vertical-align: bottom;
+  transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
   }
 
 
