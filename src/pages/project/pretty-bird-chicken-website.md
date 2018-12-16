@@ -1,7 +1,7 @@
 ---
 templateKey: project-post
-title: Pretty Bird Chicken website
-date: 2018-01-12T19:14:31-08:00
+title: Pretty Bird Chicken
+date: 2018-01-13T03:14:31.000Z
 description: >-
   Pretty Bird Chicken is fried chicken restaurant founded by Viet Phan in Salt
   Lake City. 
