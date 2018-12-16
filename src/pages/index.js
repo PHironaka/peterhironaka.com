@@ -14,7 +14,6 @@ export default class IndexPage extends React.Component {
     return (
 
           <FadeIn>  
-
       <section className="section-home">
         <div className="container two">
           {posts
