@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Source+Code+Pro:300,400');
 
 html {
   overflow-x:hidden;
@@ -70,6 +70,11 @@ max-width:100%;
 
 &.two {
 
+h2 {
+font-family: 'Source Code Pro', monospace;
+  font-weight:300;
+}
+
 .content-post {
   display:grid;
   grid-template-columns:  1fr;
@@ -85,36 +90,25 @@ max-width:100%;
 }
     .post-image {
   position: absolute;
-  left: 40%;
+  right: 80px;
+  bottom:100px;
   max-width:250px;
   opacity:0;
   margin-top:-20px;
  transition: transform 250ms;
   vertical-align: bottom;
-  transition: 0.3s;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
+  transition: 0.2s;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
   }
 
 
 }
 
-.content-post:nth-child(3n) {
- border-bottom: 1px solid #eee;
 
-  }
-
-.content-post:nth-child(5n) {
- border-bottom: 1px solid #eee;
-
-  }
-.content-post:nth-child(even) {
- border-bottom: 1px solid #eee;
-
-  }
 
 
 h2 {
@@ -182,12 +176,12 @@ img {
 .tagPage {
    list-style: none;
   margin-bottom: 0;
-  display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display:inline-block;
 
 
   li {
-margin: 1em 0;
+margin:1em 1em 1em 0 ;
+  display:inline-block;
 
 a {
   border: 1px solid #eee;
@@ -204,12 +198,11 @@ padding: 8px 15px;
 .content .taglist {
    list-style: none;
   margin-bottom: 0;
-  display:grid;
-    grid-template-columns: minmax(max-content, 73px) 1fr;
+  display:inline-flex;
 
 
   li {
-margin: 1em 0;
+margin: 1em 1em 1em 0 ;
 
 a {
   border: 1px solid #eee;
@@ -341,6 +334,7 @@ z-index: 10;
   line-height: 1;
 padding: 4px 0px;
 
+
  @media screen and (max-width: 700px) {
 grid-template-columns: 1fr ;
    
@@ -353,8 +347,14 @@ p {
 
 }
 }
+
+
 h3 {
+font-family: 'Source Code Pro', monospace;
+font-size:2em;
+font-weight:300;
   margin:0;
+  line-height:1.2;
 }
 
 p {

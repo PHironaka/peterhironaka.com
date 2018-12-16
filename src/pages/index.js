@@ -17,7 +17,6 @@ export default class IndexPage extends React.Component {
 
       <section className="section-home">
         <div className="container two">
-            <h2> Hello, my name is Peter Hironaka. I’m a Freelance Web Developer based in sunny Los Angeles, California. Here are a few things I’ve recently worked on:</h2>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
@@ -40,14 +39,7 @@ export default class IndexPage extends React.Component {
                   </Link>
                   
                 </h3>
-                <div className="index-tags">
- {post.frontmatter.tags.map(tag => (
-                    
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                  
-                  ))}
-                  </div>
-
+                
             </div>
 
             </div>
@@ -59,13 +51,7 @@ export default class IndexPage extends React.Component {
               </div>
             ))}
 
-            <div className="all-projects">
-
-                  <Link className="has-text-primary" to='/projects'>
-                   View all projects >
-
-                  </Link>
-              </div>
+       
                   
         </div>
       </section>
