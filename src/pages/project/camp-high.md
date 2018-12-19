@@ -7,7 +7,7 @@ description: >-
   fashion brand based out of Venice, CA. Camp is always in session and you are
   always invited.
 repo: 'https://github.com/PHironaka/camp'
-project: camphigh.com
+project: 'https://camphigh.com'
 image: /img/camp-high-cooper-logo-fade2_1300x.png
 tags:
   - shopify
