@@ -13,3 +13,7 @@ tags:
 The Chinatown Market has taken the internet by storm. With extremely in demand bootleg variations of Brands like Patagonia, Nike, Commes Des Garcon and more, TCM has carved out a unique space for themselves within the streetwear community.
 
 I was lucky enough to be able to help redesign their website for them and built a custom Shopify theme.
+
+
+
+\*note - The Chinatown Market site I worked on is no longer active.
