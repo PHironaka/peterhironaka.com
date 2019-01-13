@@ -3,6 +3,25 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Layout from '../../components/Layout'
+import styled from "styled-components"
+
+const TagList = styled.ul`
+   list-style: none;
+    margin-bottom: 0;
+    display: inline-block;
+
+    li {
+      margin: 1em 1em 1em 0;
+      display: inline-block;
+
+
+      a {
+        border: 1px solid #eee;
+        padding: 8px 15px;
+      }
+    }
+
+`
 
 const TagsPage = ({
   data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
@@ -15,7 +34,7 @@ const TagsPage = ({
       <div >
         <div>
           <h1>Tags</h1>
-          <ul className="tagPage">
+          <TagList>
             {group.map(tag => (
               <li key={tag.fieldValue}>
                 <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
@@ -23,7 +42,7 @@ const TagsPage = ({
                 </Link>
               </li>
             ))}
-          </ul>
+          </TagList>
         </div>
       </div>
 

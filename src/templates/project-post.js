@@ -9,6 +9,53 @@ import ProjectLinks from '../components/ProjectLinks'
 import externalLink from '../img/external-link.svg'
 import FadeIn from 'react-fade-in';
 import Layout from '../components/Layout'
+import styled from "styled-components"
+
+const HyperLink = styled.ul`
+      display:grid;
+      grid-template-columns: 90px 120px ;
+      list-style:none;
+
+      @media screen and (max-width: 800px) {
+        grid-gap:1em;
+    }
+
+    li {
+     
+
+      a {
+        border:1px solid #eee;
+      margin-right: 1em;
+      text-align:center;
+      padding:7px;
+      transition: all .2s;
+      color:black;
+      background:white;
+      display: block;
+
+      &:hover {
+      color:white;
+      background:black;
+
+      }
+      }
+
+    }
+`
+const TagList = styled.ul`
+   list-style: none;
+    margin-bottom: 0;
+    display: inline-flex;
+
+    li {
+      margin: 1em 1em 1em 0;
+      a {
+        border: 1px solid #eee;
+        padding: 8px 15px;
+      }
+    }
+
+`
 
 export const ProjectPostTemplate = ({
   content,
@@ -28,20 +75,18 @@ export const ProjectPostTemplate = ({
 
     <section className="section">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
           <div className="project-content ">
             <h2 className="title">
               {title}
             </h2>
-            <ul className="project-links">
+            <HyperLink>
             <li>
-            <a href={repo} target="_blank" rel="noopener noreferrer"><img src={github} name="github" alt="github"/> Repo</a>
+            <a href={repo} target="_blank" rel="noopener noreferrer"> Repo</a>
             </li>
              <li>
-            <a href={project} target="_blank" rel="noopener noreferrer"> Visit Site <img src={externalLink}  alt="Visit Site"/></a>
+            <a href={project} target="_blank" rel="noopener noreferrer"> Visit Site </a>
             </li>
-            </ul>
+            </HyperLink>
           <div className="project-content--items ">
 
             <div className="project-content--copy">
@@ -61,20 +106,16 @@ export const ProjectPostTemplate = ({
 
 
 {tags && tags.length ? (
-              <div className="tags" style={{ marginTop: `3rem` }}>
-                <ul >
+              <TagList>
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}> {tag}</Link>
                     </li>
                   ))}
-                </ul>
+                </TagList>
 
-              </div>
             ) : null}
           </div>
-          </div>
-        </div>
        </section>
      </FadeIn>  
 

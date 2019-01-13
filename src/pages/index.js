@@ -12,10 +12,8 @@ const IntroCopy = styled.h2 `
   font-size:2em;
   margin:1em 0 2em;
   font-weight:normal;
-
+  max-width:850px;
 `
-
-
 const LatestProjects = styled.div`
   display: grid;
   grid-template-columns: 1fr;
