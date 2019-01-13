@@ -1,9 +1,9 @@
 ---
 templateKey: project-post
-title: Interior Collect
+title: Collect Interior
 date: 2018-12-06T16:23:24.300Z
 description: >-
-  Interior Collect is a new clothing brand offering premium quality that can be
+  Collect Interior is a new clothing brand offering premium quality that can be
   part of your day-to-day wardrobe while supporting gender equality and helping
   emerging artists. 
 repo: 'https://github.com/PHironaka/collect-interior'
