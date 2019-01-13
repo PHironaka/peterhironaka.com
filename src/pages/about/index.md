@@ -25,4 +25,4 @@ If you're interested in collaborating on a project or just want to say hello, pl
 * [Github](https://github.com/PHironaka)
 * [Working Not Working](https://workingnotworking.com/peterhironaka)
 
-[Here is a link ](https://peterhironaka.com/img/pjh-resume-min%20(1).pdf)to my resume.
+[Here is a link](/img/Resume-PJH_COMPRESSED.pdf) to my resume.
