@@ -2,6 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import FadeIn from 'react-fade-in';
+import Layout from '../components/Layout'
+import styled from "styled-components"
+
+const BlogPost = styled.div` 
+    margin: 2em 0;
+`
 
 export default class BlogPage extends React.Component {
   render() {
@@ -9,14 +15,15 @@ export default class BlogPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
+      <Layout>
+          <FadeIn>  
+
       <section className="section-home">
-        <div className="container page">
           
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
             .map(({ node: post }) => (
-          <FadeIn>  
-             
+              <BlogPost>
              <Link className="has-text-primary" to={post.fields.slug}>
 
               <div
@@ -39,12 +46,13 @@ export default class BlogPage extends React.Component {
                 </p>
               </div>
                                 </Link>
-          </FadeIn>  
 
-
+                                </BlogPost>
             ))}
-        </div>
       </section>
+      </FadeIn>  
+
+      </Layout>
     )
   }
 }

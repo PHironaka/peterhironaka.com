@@ -5,6 +5,39 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 import FadeIn from 'react-fade-in';
+import Layout from '../components/Layout'
+import styled from "styled-components"
+
+const BlogContent = styled.div` 
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 2em;
+  margin: 0;
+  padding: 0;
+  @media screen and (max-width: 800px) {
+  grid-template-columns: 1fr ;
+  }
+
+  li {
+    list-style-type: circle;
+    margin-left: 15px;
+  }
+`
+
+const Taglist = styled.ul` 
+    margin-bottom: 0;
+
+    li {
+    list-style: none;
+
+      margin: 1em 1em 2em 0;
+      a {
+        border: 1px solid #eee;
+        padding: 8px 15px;
+      }
+
+    }
+`
 
 export const BlogPostTemplate = ({
   content,
@@ -19,15 +52,13 @@ export const BlogPostTemplate = ({
 
   return (
     <section className="section">
+       <FadeIn>  
       {helmet || ''}
-      <div className="container content">
         <div className="columns">
-                  <FadeIn>  
 
-          <div className="blog-container">
-                        <div className="blog-container--post">
-
-            <h2 className="blog-container--title">
+          <BlogContent>
+             <div >
+            <h2 >
               {title}
             </h2>
              <p>{date}</p>
@@ -43,23 +74,22 @@ export const BlogPostTemplate = ({
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
-                <ul className="taglist">
+                <Taglist>
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                     </li>
                   ))}
-                </ul>
+                </Taglist>
               </div>
             ) : null}
             </div>
 
-        </div>
-                  </FadeIn>  
+        </BlogContent>
 
         </div>
+        </FadeIn>  
         
-      </div>
     </section>
   )
 }
@@ -77,6 +107,8 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
+    <Layout>
+
     <BlogPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
@@ -86,6 +118,8 @@ const BlogPost = ({ data }) => {
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />
+    </Layout>
+
   )
 }
 

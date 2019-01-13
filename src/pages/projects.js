@@ -2,7 +2,50 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import externalLink from '../img/external-link.svg'
+import SourceCode from '../img/github-icon.svg'
 import FadeIn from 'react-fade-in';
+import Layout from '../components/Layout'
+import styled from "styled-components"
+
+const ProjectPost = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 2em;
+  padding: 2em 0;
+  border-bottom: 1px solid #dcdcdc;
+  @media screen and (max-width: 800px) {
+  grid-template-columns: 1fr ;
+  }
+
+  &:last-child {
+    border-bottom: none;
+
+`
+
+const ProjectTitle = styled.div`
+  h3 {
+    margin:0;
+  }
+`
+
+const VisitSite = styled.div`
+  display: grid;
+  grid-template-columns: 150px 120px;
+  grid-gap:1em;
+  margin-top:2em;
+
+  a {
+    display: grid;
+    grid-template-columns:34px 1fr;
+
+    p {
+      margin:0;
+    }
+  }
+
+
+
+`
 
 export default class ProjectPage extends React.Component {
   render() {
@@ -10,23 +53,21 @@ export default class ProjectPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
+      <Layout>
+          <FadeIn>  
+
       <section className="section-home">
-        <div className="container page">
 
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
-          <FadeIn>  
-              <div
-                className="content-post"
-                key={post.id}
-              >
-                 <div
-                className="content-post--project">
+
+            
+                 <ProjectPost>
                 <img src={post.frontmatter.image} alt={post.frontmatter.title} />
 
                 <div className="content-post--project--title">
-                <div className="content-post--project--title--links">
+                <ProjectTitle>
                 <h3>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
@@ -34,16 +75,16 @@ export default class ProjectPage extends React.Component {
                   </Link>
                   
                 </h3>
-            <a className="post-content--external-link" href={post.frontmatter.project} target="_blank" rel="noopener"><img src={externalLink} alt="Visit Site"/></a>
-                             <p>{post.frontmatter.date}</p>
-                   </div>       
+                   </ProjectTitle>       
                 <p>
                   {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Read More →
-                  </Link>
+
+                <VisitSite>
+                <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank" rel="noopener"><img src={SourceCode} alt="Visit Site"/> <p>Source Code</p></a>
+                <a className="post-content--external-link" href={post.frontmatter.project} target="_blank" rel="noopener"><img src={externalLink} alt="Visit Site"/> <p>Visit Site</p></a>
+                </VisitSite>
+
+                  
                 </p>
 
                           </div>   
@@ -51,16 +92,16 @@ export default class ProjectPage extends React.Component {
               
                  
 
-            </div>
+            </ProjectPost>
                   
             
 
-              </div>
-        </FadeIn>
 
             ))}
-        </div>  
       </section>
+      </FadeIn>
+
+      </Layout>
     )
   }
 }

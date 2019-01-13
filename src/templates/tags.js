@@ -1,7 +1,23 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import Content, { HTMLContent } from '../components/Content'
+import Layout from '../components/Layout'
+import styled from "styled-components"
+
+const TagList = styled.ul`
+   list-style: none;
+    margin-bottom: 0;
+    display: inline-flex;
+
+    li {
+      margin: 1em 1em 1em 0;
+      a {
+        border: 1px solid #eee;
+        padding: 8px 15px;
+      }
+    }
+
+`
 
 
 class TagRoute extends React.Component {
@@ -27,23 +43,21 @@ class TagRoute extends React.Component {
     } tagged with “${tag}”`
 
     return (
+    <Layout>
+
       <section className="section">
         <Helmet title={`${tag} | ${title}`} />
-        <div className="container content">
-          <div className="columns">
-            <div
-              className="column is-10 is-offset-1"
-              style={{ marginBottom: '6rem' }}
-            >
+            <div>
               <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-              <ul className="taglist">{postLinks}</ul>
+              <TagList>
+                {postLinks}
+              </TagList>
               <p>
                 <Link to="/tags/">Browse all tags</Link>
               </p>
             </div>
-          </div>
-        </div>
       </section>
+      </Layout>
     )
   }
 }

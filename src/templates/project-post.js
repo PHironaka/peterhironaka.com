@@ -8,6 +8,7 @@ import github from '../img/github-icon.svg'
 import ProjectLinks from '../components/ProjectLinks'
 import externalLink from '../img/external-link.svg'
 import FadeIn from 'react-fade-in';
+import Layout from '../components/Layout'
 
 export const ProjectPostTemplate = ({
   content,
@@ -33,20 +34,33 @@ export const ProjectPostTemplate = ({
             <h2 className="title">
               {title}
             </h2>
-
             <ul className="project-links">
             <li>
-            <a href={repo} target="_blank" rel="noopener"><img src={github} name="github" alt="github"/> Repo</a>
+            <a href={repo} target="_blank" rel="noopener noreferrer"><img src={github} name="github" alt="github"/> Repo</a>
             </li>
              <li>
-            <a href={project} target="_blank" rel="noopener">Visit Site <img src={externalLink}  alt="Visit Site"/></a>
+            <a href={project} target="_blank" rel="noopener noreferrer"> Visit Site <img src={externalLink}  alt="Visit Site"/></a>
             </li>
             </ul>
           <div className="project-content--items ">
 
             <div className="project-content--copy">
 
-                {tags && tags.length ? (
+            <PostContent content={content} />
+          </div>
+
+            <div className="project-content--image">
+           <img src={image} alt={title} name={title} />
+
+        </div>
+        </div>
+             <ProjectLinks
+          previous={PostContent.previous}
+          next={PostContent.next}
+        />
+
+
+{tags && tags.length ? (
               <div className="tags" style={{ marginTop: `3rem` }}>
                 <ul >
                   {tags.map(tag => (
@@ -58,27 +72,11 @@ export const ProjectPostTemplate = ({
 
               </div>
             ) : null}
-                        <PostContent content={content} />
-</div>
-
-            <div className="project-content--image">
-  
-                        <img src={image} alt={title} name={title} />
-
-</div>
-</div>
-
-        
-
-             <ProjectLinks
-          previous={PostContent.previous}
-          next={PostContent.next}
-        />
+          </div>
           </div>
         </div>
-      </div>
-    </section>
-          </FadeIn>  
+       </section>
+     </FadeIn>  
 
   )
 }
@@ -98,6 +96,8 @@ const ProjectPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
+    <Layout>
+
     <ProjectPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
@@ -109,6 +109,8 @@ const ProjectPost = ({ data }) => {
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />
+    </Layout>
+
   )
 }
 

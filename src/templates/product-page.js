@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
+import Layout from '../components/Layout'
 
 export const ProductPageTemplate = ({
   image,
@@ -135,6 +136,8 @@ const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
+    <Layout>
+
     <ProductPageTemplate
       image={frontmatter.image}
       title={frontmatter.title}
@@ -146,6 +149,8 @@ const ProductPage = ({ data }) => {
       fullImage={frontmatter.full_image}
       pricing={frontmatter.pricing}
     />
+        </Layout>
+
   )
 }
 

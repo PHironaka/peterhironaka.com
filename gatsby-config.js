@@ -66,6 +66,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+        displayName: false
+      }
+    },
     `gatsby-plugin-offline`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
