@@ -1,7 +1,7 @@
 ---
 templateKey: project-post
 title: Camp High
-date: 2018-12-16T17:38:07.252Z
+date: 2018-10-17T16:38:07.252Z
 description: >-
   Helped build a Shopify site for Camp High, an irreverent and groovy new
   fashion brand based out of Venice, CA. Camp is always in session and you are
