@@ -9,7 +9,6 @@ import Instagram from '../img/instagram.svg'
 const FooterItems = styled.div`
    display: grid;
    grid-template-columns: 1fr 2fr;
-   
     @media screen and (max-width: 800px) {
     grid-template-columns: 1fr ;
     grid-gap:1em;
@@ -50,9 +49,9 @@ const Footer = () => (
               © {new Date().getFullYear()} Peter Hironaka
           </Copyright>
           <FooterSocial>
-            <li><a href="https://instagram.com/peterhironaka" target="_blank"><img src={Instagram} alt="Instagram"/></a></li>
-            <li><a href="https://twitter.com/peterhironaka" target="_blank"><img src={Twitter} alt="Twitter"/></a></li>
-            <li><a href="https://github.com/phironaka" target="_blank"><img src={SourceCode} alt="Github"/></a></li>
+            <li><a href="https://instagram.com/peterhironaka" target="_blank" rel="noopener"><img src={Instagram} alt="Instagram"/></a></li>
+            <li><a href="https://twitter.com/peterhironaka" target="_blank" rel="noopener"><img src={Twitter} alt="Twitter"/></a></li>
+            <li><a href="https://github.com/phironaka" target="_blank" rel="noopener"><img src={SourceCode} alt="Github"/></a></li>
           </FooterSocial>
       </FooterItems>
       
