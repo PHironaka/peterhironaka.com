@@ -127,6 +127,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             image
+            repo
             project
             templateKey
             date(formatString: "YYYY")
