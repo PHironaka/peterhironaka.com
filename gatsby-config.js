@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Peter Hironaka portfolio',
+    siteUrl: `https://peterhironaka.com`,
   },
   plugins: [
 
