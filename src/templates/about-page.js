@@ -16,6 +16,7 @@ const AboutSection = styled.div`
   display: grid;
   grid-template-columns: 1fr ;
   padding: 0 2em;
+  margin-bottom:4em;
 
   h2 {
     margin:2em 0;

@@ -59,10 +59,19 @@ const TagList = styled.ul`
 
     li {
       margin: 2em 1em 2em 0;
+
+
       a {
         border: 1px solid #000;
         border-radius:10px;
         padding: 8px 15px;
+        color:black;
+        transition: all .2s;
+        background:white;
+        &:hover {
+          color:white;
+          background:black;
+          }
       }
     }
 

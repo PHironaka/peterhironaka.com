@@ -38,6 +38,13 @@ const Taglist = styled.ul`
         border: 1px solid #000;
         border-radius:10px;
         padding: 8px 15px;
+        color:black;
+        transition: all .2s;
+        background:white;
+        &:hover {
+          color:white;
+          background:black;
+          }
       }
 
     }
