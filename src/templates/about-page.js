@@ -5,22 +5,22 @@ import pistol from '../img/space-pic.jpg'
 import FadeIn from 'react-fade-in';
 import Layout from '../components/Layout'
 import styled from "styled-components"
+import Helmet from 'react-helmet'
 
 const Image = styled.img`
-    max-width: 170px;
-    border-radius: 50%;
-    @media screen and (max-width: 800px) {
     max-width: 100%;
     border-radius:0;
-  }
 `
 
 const AboutSection = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  @media screen and (max-width: 800px) {
   grid-template-columns: 1fr ;
+  padding: 0 2em;
+
+  h2 {
+    margin:2em 0;
   }
+
 
   a {
     border-bottom:1px solid;
@@ -36,7 +36,11 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
     <section className="section section--gradient">
           <FadeIn>  
-            
+          <Helmet
+            titleTemplate="%s | Peter Hironaka"
+          >
+            <title>{`About`}</title>
+          </Helmet>
              <AboutSection>
               <Image src={pistol} alt="about image"/>
               <PageContent className="about-content" content={content} />

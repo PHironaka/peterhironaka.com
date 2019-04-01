@@ -1,19 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
-import externalLink from '../img/external-link.svg'
 import FadeIn from 'react-fade-in';
-import { kebabCase } from 'lodash'
 import Layout from '../components/Layout'
 import styled from "styled-components"
 
-const IntroCopy = styled.h2 `
-  font-family: 'Quattrocento Sans', sans-serif;
-  font-size:2em;
-  margin:1em 0 2em;
-  font-weight:normal;
-  max-width:850px;
-`
 const LatestProjects = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -68,9 +59,7 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
        <FadeIn>  
-         <section className="section-home">
-         <IntroCopy> Hello, my name is Peter Hironaka. I’m a Freelance Web Developer based in sunny Los Angeles, California. Here are a few things I’ve recently worked on:</IntroCopy>
-
+         <section >
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
@@ -86,7 +75,7 @@ export default class IndexPage extends React.Component {
                 </ProjectLink>
             </div>
             <div className="post-image">
-            <img src={post.frontmatter.image} alt={post.frontmatter.title} />
+            <img src={post.frontmatter.image.publicURL} alt={post.frontmatter.title} />
               </div>
               </LatestProjects>
             ))}
@@ -119,7 +108,9 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            image
+            image {
+              publicURL
+            }
             project
             tags
             templateKey

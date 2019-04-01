@@ -1,30 +1,33 @@
 module.exports = {
   siteMetadata: {
     title: 'Peter Hironaka portfolio',
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     siteUrl: `https://peterhironaka.com`,
   },
   plugins: [
 
-    
     {
-          resolve: `gatsby-remark-responsive-image`,
-          options: {
-            // It's important to specify the maxWidth (in pixels) of
-            // the content container as this plugin uses this as the
-            // base for generating different widths of each image.
-            maxWidth: 590,
-          },
-        },
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'uploads',
+      },
+    },
 
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
       {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: `#191919`,
-        minimum: 0.2,
+        minimum: 0.9,
         trickle: false,
         showSpinner: false,
       },
     },
+    
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -86,19 +89,8 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
-    },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    {
       resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [],
-      },
+      
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',

@@ -8,7 +8,8 @@ import styled from "styled-components"
 const TagList = styled.ul`
    list-style: none;
     margin-bottom: 0;
-    display: inline-block;
+    display: block;
+    padding: 0 2em;
 
     li {
       margin: 1em 1em 1em 0;
@@ -16,8 +17,9 @@ const TagList = styled.ul`
 
 
       a {
-        border: 1px solid #eee;
+        border: 1px solid #000;
         padding: 8px 15px;
+        border-radius:10px;
       }
     }
 
@@ -33,7 +35,6 @@ const TagsPage = ({
     <Helmet title={`Tags | ${title}`} />
       <div >
         <div>
-          <h1>Tags</h1>
           <TagList>
             {group.map(tag => (
               <li key={tag.fieldValue}>

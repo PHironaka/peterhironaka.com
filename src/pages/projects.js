@@ -2,42 +2,82 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import externalLink from '../img/external-link.svg'
-import SourceCode from '../img/github-icon.svg'
 import FadeIn from 'react-fade-in';
 import Layout from '../components/Layout'
 import styled from "styled-components"
+import Img from 'gatsby-image'
+import Helmet from 'react-helmet'
+import Marquee from 'react-text-marquee';
+
+const ProjectPageContainer = styled.section`
+
+  display: grid;
+.ui-marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+  background-color: transparent;
+  padding: 10px 0;
+  position: absolute;
+  top:0;
+  width: 100%;
+  z-index:1;
+}
+
+.ui-marquee  span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 6s linear infinite;
+    font-size: 3em;
+    opacity:1;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+`
+
+const Projects = styled.div`
+  margin-top: 5em;
+`
+
 
 const ProjectPost = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(1,auto);
   grid-column-gap: 2em;
-  padding: 2em 0;
-  border-bottom: 1px solid #dcdcdc;
+  padding: 1em 2em;
+  border-bottom: 1px solid;
+
   @media screen and (max-width: 800px) {
   grid-template-columns: 1fr ;
   }
 
   &:last-child {
     border-bottom: none;
-
+  }
 `
 
+
 const ProjectTitle = styled.div`
-  h3 {
-    margin:0;
+  h2 {
+    margin:10px 0;
   }
 `
 
 const VisitSite = styled.div`
   display: grid;
-  grid-template-columns: 150px 120px;
+  grid-template-columns:  120px 150px;
   grid-gap:1em;
-  margin-top:2em;
 
   a {
     display: grid;
-    grid-template-columns:34px 1fr;
-
+    grid-template-columns: 1fr 25px;
+    margin:1em 0;
     p {
       margin:0;
     }
@@ -55,42 +95,39 @@ export default class ProjectPage extends React.Component {
     return (
       <Layout>
           <FadeIn>  
-
-      <section className="section-home">
-
+          <Helmet
+            titleTemplate="%s | Peter Hironaka"
+          >
+            <title>{`Projects`}</title>
+          </Helmet>
+      <ProjectPageContainer>
+      <Marquee text="Recent Work Below  Recent Work Below Recent Work Below " />
+        <Projects>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'project-post')
             .map(({ node: post }) => (
-
-            
-                 <ProjectPost>
-                <img src={post.frontmatter.image} alt={post.frontmatter.title} />
-
-                <div className="content-post--project--title">
+              <ProjectPost>
+                  <Img fluid={post.frontmatter.image.childImageSharp.fluid} alt={post.frontmatter.title} name={post.frontmatter.title}/>
                 <ProjectTitle>
-                <h3>
-                  <Link className="has-text-primary" to={post.fields.slug}>
+                <h2>
+                  <Link className="has-text-primary" to={post.fields.slug} target="_blank" rel="noopener noreferrer">
                     {post.frontmatter.title}
-
                   </Link>
-                  
-                </h3>
-                   </ProjectTitle>       
-                <p>
-                  {post.excerpt}
-
+                </h2>
+                </ProjectTitle>   
+                  <p>{post.excerpt}</p>    
                 <VisitSite>
-                <a className="post-content--external-link" href={post.frontmatter.repo} target="_blank" rel="noopener"><img src={SourceCode} alt="Visit Site"/> <p>Source Code</p></a>
-                <a className="post-content--external-link" href={post.frontmatter.project} target="_blank" rel="noopener"><img src={externalLink} alt="Visit Site"/> <p>Visit Site</p></a>
+                <a className="post-content--external-link" href={post.frontmatter.project} target="_blank" rel="noopener noreferrer"> <p>Visit Site</p><img src={externalLink} alt="Visit Site"/></a>
                 </VisitSite>
 
-                  
-                </p>
 
-                          </div>   
-
-              
-                 
+                {/* <TagList>
+      {post.frontmatter.tags.map(tag => (
+        <li key={tag + `tag`}>
+          <Link to={`/tags/${kebabCase(tag)}/`}> x {tag}</Link>
+        </li>
+      ))}
+    </TagList> */}
 
             </ProjectPost>
                   
@@ -98,7 +135,8 @@ export default class ProjectPage extends React.Component {
 
 
             ))}
-      </section>
+            </Projects>
+      </ProjectPageContainer>
       </FadeIn>
 
       </Layout>
@@ -126,9 +164,15 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            image
-            repo
+            image {
+              childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+              }
+            }
+          }
             project
+            tags
             templateKey
             date(formatString: "YYYY")
           }

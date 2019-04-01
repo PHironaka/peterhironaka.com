@@ -10,18 +10,21 @@ import styled from "styled-components"
 
 const BlogContent = styled.div` 
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns:  1fr;
   grid-column-gap: 2em;
   margin: 0;
-  padding: 0;
-  @media screen and (max-width: 800px) {
-  grid-template-columns: 1fr ;
-  }
+  padding: 0 2em;
 
+
+  
   li {
     list-style-type: circle;
     margin-left: 15px;
   }
+`
+
+const BlogTitle = styled.div`
+  margin-bottom:1em;
 `
 
 const Taglist = styled.ul` 
@@ -32,7 +35,8 @@ const Taglist = styled.ul`
 
       margin: 1em 1em 2em 0;
       a {
-        border: 1px solid #eee;
+        border: 1px solid #000;
+        border-radius:10px;
         padding: 8px 15px;
       }
 
@@ -57,23 +61,22 @@ export const BlogPostTemplate = ({
         <div className="columns">
 
           <BlogContent>
-             <div >
+             <BlogTitle >
+
             <h2 >
               {title}
             </h2>
              <p>{date}</p>
+             </ BlogTitle >
 
             <p>{description}</p>
             <PostContent content={content} />
-
-            </div>
 
 
                         <div className="blog-container--credits">
 
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
                 <Taglist>
                   {tags.map(tag => (
                     <li key={tag + `tag`}>

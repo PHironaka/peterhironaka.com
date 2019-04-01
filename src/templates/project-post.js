@@ -4,12 +4,22 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
-import github from '../img/github-icon.svg'
 import ProjectLinks from '../components/ProjectLinks'
-import externalLink from '../img/external-link.svg'
 import FadeIn from 'react-fade-in';
 import Layout from '../components/Layout'
 import styled from "styled-components"
+import Img from 'gatsby-image'
+
+const ProjectListing = styled.div`
+  display: grid;
+grid-template-columns: 1fr ;
+grid-column-gap: 2em;
+padding: 0 2em;
+
+ p {
+  margin: 1em 0;
+ }
+`
 
 const HyperLink = styled.ul`
       display:grid;
@@ -21,7 +31,7 @@ const HyperLink = styled.ul`
     }
 
     li {
-     
+      margin: 1em 0;
 
       a {
         border:1px solid #eee;
@@ -48,9 +58,10 @@ const TagList = styled.ul`
     display: inline-flex;
 
     li {
-      margin: 1em 1em 1em 0;
+      margin: 2em 1em 2em 0;
       a {
-        border: 1px solid #eee;
+        border: 1px solid #000;
+        border-radius:10px;
         padding: 8px 15px;
       }
     }
@@ -76,7 +87,9 @@ export const ProjectPostTemplate = ({
     <section className="section">
       {helmet || ''}
           <div className="project-content ">
-            <h2 className="title">
+           
+          <ProjectListing>
+          <h2 className="title">
               {title}
             </h2>
             <HyperLink>
@@ -87,25 +100,17 @@ export const ProjectPostTemplate = ({
             <a href={project} target="_blank" rel="noopener noreferrer"> Visit Site </a>
             </li>
             </HyperLink>
-          <div className="project-content--items ">
-
             <div className="project-content--copy">
 
             <PostContent content={content} />
           </div>
 
             <div className="project-content--image">
-           <img src={image} alt={title} name={title} />
+            <Img fluid={image.childImageSharp.fluid} alt={title} name={title}/>
 
         </div>
-        </div>
-             <ProjectLinks
-          previous={PostContent.previous}
-          next={PostContent.next}
-        />
 
-
-{tags && tags.length ? (
+        {tags && tags.length ? (
               <TagList>
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
@@ -115,6 +120,15 @@ export const ProjectPostTemplate = ({
                 </TagList>
 
             ) : null}
+
+        </ProjectListing>
+             <ProjectLinks
+          previous={PostContent.previous}
+          next={PostContent.next}
+        />
+
+
+
           </div>
        </section>
      </FadeIn>  
@@ -173,7 +187,13 @@ export const pageQuery = graphql`
         title
         description
         project
-        image
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         repo
         tags
       }

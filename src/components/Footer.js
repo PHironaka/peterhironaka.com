@@ -9,6 +9,8 @@ import Instagram from '../img/instagram.svg'
 const FooterItems = styled.div`
    display: grid;
    grid-template-columns: 1fr 2fr;
+   border-top:1px solid;
+   padding:2em;
     @media screen and (max-width: 800px) {
     grid-template-columns: 1fr ;
     grid-gap:1em;

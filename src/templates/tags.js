@@ -8,6 +8,7 @@ const TagList = styled.ul`
    list-style: none;
     margin-bottom: 0;
     display: inline-flex;
+    padding: 0 2em;
 
     li {
       margin: 1em 1em 1em 0;
