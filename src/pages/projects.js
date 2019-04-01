@@ -121,14 +121,6 @@ export default class ProjectPage extends React.Component {
                 </VisitSite>
 
 
-                {/* <TagList>
-      {post.frontmatter.tags.map(tag => (
-        <li key={tag + `tag`}>
-          <Link to={`/tags/${kebabCase(tag)}/`}> x {tag}</Link>
-        </li>
-      ))}
-    </TagList> */}
-
             </ProjectPost>
                   
             
