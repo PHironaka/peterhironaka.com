@@ -5,7 +5,7 @@ date: 2018-05-27T22:05:31.000Z
 description: Nourish Snacks offer an assortment of delicious granola bites.
 repo: 'https://nourishsnacks.com'
 project: 'https://nourishsnacks.com'
-image: /img/nourish.png
+image: /img/91hc2dy-8dl.jpg
 tags:
   - siteleaf
   - jekyll
