@@ -16,7 +16,26 @@ module.exports = {
     },
 
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
+
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `@weknow/gatsby-remark-twitter`,
+            
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+
+    },
+    
     `gatsby-plugin-sharp`,
       {
       resolve: `gatsby-plugin-nprogress`,
@@ -96,7 +115,7 @@ module.exports = {
         name: 'images',
       },
     },
-    
+
     {
       resolve: 'gatsby-transformer-remark',
       
