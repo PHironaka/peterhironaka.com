@@ -98,9 +98,13 @@ export const ProjectPostTemplate = ({
           <div className="project-content ">
            
           <ProjectListing>
-          <h2 className="title">
+            <div className="project-content--image">
+              <Img fluid={image.childImageSharp.fluid} alt={title} name={title}/>
+            </div>
+            <h2 className="title">
               {title}
             </h2>
+            
             <HyperLink>
             <li>
             <a href={repo} target="_blank" rel="noopener noreferrer"> Repo</a>
@@ -114,10 +118,7 @@ export const ProjectPostTemplate = ({
             <PostContent content={content} />
           </div>
 
-            <div className="project-content--image">
-            <Img fluid={image.childImageSharp.fluid} alt={title} name={title}/>
-
-        </div>
+           
 
         {tags && tags.length ? (
               <TagList>

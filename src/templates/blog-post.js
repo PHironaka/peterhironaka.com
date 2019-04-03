@@ -15,7 +15,9 @@ const BlogContent = styled.div`
   margin: 0;
   padding: 0 2em;
 
-
+  p {
+    margin: 1em 0;
+  }
   
   li {
     list-style-type: circle;

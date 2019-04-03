@@ -41,6 +41,7 @@ const Title = styled.h1`
   margin: 1em 0 0;
   font-size:2em;
   font-weight:900;
+  text-transform:uppercase;
 
 `
 
@@ -61,7 +62,7 @@ const NavLinks = styled.div`
         bottom: 0;
         top:26px;
         height: 1px;
-        background: #333;
+        background: #000;
     }
     &:hover {
       &:after {

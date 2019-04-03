@@ -78,7 +78,7 @@ h2 {
 }
 
 a {
-  color:#333;
+  color:#000;
   text-decoration:none;
 }
 

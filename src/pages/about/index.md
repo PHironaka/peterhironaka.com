@@ -1,5 +1,6 @@
 ---
 templateKey: about-page
+image: /img/pistol.jpg
 title: Established 1987.
 ---
 ## Established 1987.
