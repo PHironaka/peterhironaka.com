@@ -27,7 +27,7 @@ I've had the opportunity to work with some amazing clients. Some notable names b
 
 ### How to get a hold of me:
 
-If you're interested in collaborating on a project or just want to say hello, please email me: <mailto:peter@peterhironaka.com>. If you'd like to see a few of my producer credits, I've procured a list here of projects I helped create (coming soon). I'm also active on social media & other places on the internet. Here are a few relevant links where you can find me and get a hold of me:
+If you're interested in collaborating on a project or just want to say hello, please email me: <mailto:peter@peterhironaka.com>. If you'd like to see a few of my producer credits, I've procured a list here of projects I helped create [here](/archived-projects). I'm also active on social media & other places on the internet. Here are a few relevant links where you can find me and get a hold of me:
 
 * [Twitter](https://twitter.com/peterhironaka)
 * [Facebook](https://facebook.com/peterhironaka)
