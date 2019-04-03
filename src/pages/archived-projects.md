@@ -3,8 +3,6 @@ templateKey: archived-post
 title: Archived Projects
 ---
 
-Since 2012, I've been a Digital and Social Media Content Producer, working with some of the coolest brands in the world (Nike, Hulu, Old Spice, to name a few).  While I still enjoy Producing Digital content, I've decided to pursue a path as a Web Developer. This website is powered by [Gatsby.js ](https://gatsbyjs.org)and its content is managed via [Netlify CMS](https://netlifycms.org).
-
 ## Archived Web Projects
 
 * [Nourish Snacks](https://nourishsnacks.com)
