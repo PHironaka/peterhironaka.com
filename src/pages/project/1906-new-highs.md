@@ -10,7 +10,9 @@ project: 'https://1906newhighs.com/'
 image: /img/1906_midnight_box_hand_4777_2000x1335.jpg
 tags:
   - gatsby
+  - PWA
+  - styled components
 ---
 1906 is a (new) high. 1906 combines the pleasure of low dose cannabis with the functional benefits of plant medicine.
 
-I helped with the redesign of 1906's website, which was built w/Gatsby.js.
+I helped with the redesign of 1906's website, which was built w/Gatsby.js., styled components. The site also functions as a Progressive Web App and features offline support.
