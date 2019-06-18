@@ -10,3 +10,12 @@ project: 'https://anrclinic.com'
 image: /img/anr-portfolio-site.jpg
 ---
 ANR (Accelerated Neuroregulation) is t new paradigm of treatment for opioid dependency.
+
+
+
+I built a Progressive Web App for them with:
+
+* Styled Components
+* Gatsby.js
+* Netlify 
+* Elasticlunr Search
