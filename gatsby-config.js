@@ -22,10 +22,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `@weknow/gatsby-remark-twitter`,
-            
-          },
-          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -35,6 +31,8 @@ module.exports = {
       },
 
     },
+
+    `gatsby-plugin-twitter`,
     
     `gatsby-plugin-sharp`,
       {

@@ -14,7 +14,7 @@ const Image = styled.img`
 
 const AboutSection = styled.div`
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   padding: 0 2em;
   margin-bottom:4em;
 

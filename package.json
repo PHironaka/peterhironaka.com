@@ -22,6 +22,7 @@
     "gatsby-plugin-sharp": "^2.0.32",
     "gatsby-plugin-sitemap": "^2.0.10",
     "gatsby-plugin-styled-components": "^3.0.4",
+    "gatsby-plugin-twitter": "^2.1.0",
     "gatsby-remark-images": "^3.0.10",
     "gatsby-remark-relative-images": "^0.2.1",
     "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
