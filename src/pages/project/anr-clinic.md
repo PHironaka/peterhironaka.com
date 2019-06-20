@@ -1,0 +1,24 @@
+---
+templateKey: project-post
+title: ANR Clinic
+date: 2019-06-18T20:03:48.683Z
+description: >-
+  ANR (Accelerated Neuroregulation) is t new paradigm of treatment for opioid
+  dependency.
+repo: 'https://anrclinic.com'
+project: 'https://anrclinic.com'
+image: /img/anrportfolio-site.jpg
+tags:
+  - pwa
+  - gatsby
+---
+ANR (Accelerated Neuroregulation) is t new paradigm of treatment for opioid dependency.
+
+
+
+I built a Progressive Web App for them with:
+
+* Styled Components
+* Gatsby.js
+* Netlify 
+* Elasticlunr Search
