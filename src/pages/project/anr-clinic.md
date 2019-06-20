@@ -7,7 +7,10 @@ description: >-
   dependency.
 repo: 'https://anrclinic.com'
 project: 'https://anrclinic.com'
-image: /img/anr-portfolio-site.jpg
+image: /img/anrportfolio-site.jpg
+tags:
+  - pwa
+  - gatsby
 ---
 ANR (Accelerated Neuroregulation) is t new paradigm of treatment for opioid dependency.
 
