@@ -16,24 +16,7 @@ module.exports = {
     },
 
     `gatsby-transformer-sharp`,
-
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
-          },
-        ],
-      },
-
-    },
-
     `gatsby-plugin-twitter`,
-    
     `gatsby-plugin-sharp`,
       {
       resolve: `gatsby-plugin-nprogress`,
