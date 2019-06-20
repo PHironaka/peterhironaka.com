@@ -13,6 +13,6 @@ tags:
   - PWA
   - styled components
 ---
-1906 is a (new) high. 1906 combines the pleasure of low dose cannabis with the functional benefits of plant medicine.
+1906 is a (new) high. 1906 combines the pleasure of low dose cannabis with the functional benefits of plant medicine. 
 
 I helped redesign 1906's website, which was built w/Gatsby.js., styled components. The site also functions as a Progressive Web App and features offline support.
